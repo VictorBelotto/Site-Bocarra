@@ -1,0 +1,25 @@
+
+
+.cabecalho{
+    display: flex;
+    background-color: #040d26;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 250px;
+}
+
+.navBar{
+    display: flex;
+    gap: 10px;
+    padding-right: 40px;
+}
+
+.navBar_a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}

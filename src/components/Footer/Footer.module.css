@@ -1,0 +1,23 @@
+.rodape{
+background: #040d26;
+width: 100%;
+position: absolute;
+bottom: 0;
+left: 0;
+display: flex;
+justify-content: space-between;
+}
+
+.mapa{
+  width: 300px;
+  height: 200px;
+  border: 0px;
+  margin: 5px 10px;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 5px 20px;
+}
