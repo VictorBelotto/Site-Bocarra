@@ -10,20 +10,21 @@ const Footer = ()=> {
 
     <div className={styles.social_list}>
       <img style={{width: '250px'}} src={LogoBranco} alt="/" />
-
       <ul>
-      <li>
-        <a  href="/"><FaFacebook  className={styles.facebook} /></a>
-      </li>
-      <li>
-        <a  href="/"><FaInstagram className={styles.instagram} /></a>
-      </li>
-      <li>
-        <a href="/"><FaWhatsapp className={styles.whatsapp}  /></a>
-      </li>
-      <li>
-        <a  href="/"><SiGmail className={styles.gmail} /></a>
-      </li>
+        <li>
+          <a  href="/"><FaFacebook  className={styles.facebook} /></a>
+        </li>
+        <li>
+          <a className={styles.instagramGradientBackground} href="/">
+            <FaInstagram className={styles.instagram} />
+          </a>
+        </li>
+        <li>
+          <a href="/"><FaWhatsapp className={styles.whatsapp}  /></a>
+        </li>
+        <li>
+          <a  href="/"><SiGmail className={styles.email} /></a>
+        </li>
      </ul>
     </div>
 

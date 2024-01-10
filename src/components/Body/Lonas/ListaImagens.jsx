@@ -16,15 +16,15 @@ const ListaImagens = () => {
 
   return (
     <div className={styles.container}>
-    <section className={styles.container_conteudo}>
-      <h1 className={styles.titulo}>{listaCircos[0].titulo}</h1>
-      <div className={styles.container_imagens}>
-        {listaCircos[0].imagens.map((imagem, index) => (
-          <img key={index} className={styles.imagens} src={imagem} alt="/" />
-        ))}
-      </div>
-    </section>
-  </div>
+      <section className={styles.container_conteudo}>
+        <h1 className={styles.titulo}>{listaCircos[0].titulo}</h1>
+        <div className={styles.container_imagens}>
+          {listaCircos[0].imagens.map((imagem, index) => (
+            <img key={index} className={styles.imagens} src={imagem} alt="/" />
+          ))}
+        </div>
+      </section>
+    </div>
   
   );
 }

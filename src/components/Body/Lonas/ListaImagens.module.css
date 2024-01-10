@@ -4,16 +4,24 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    margin: 20px 0px;
 }
 
 .container_conteudo{
-    display: flex;
-    justify-self: center;
-    flex-direction: column;
-    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    
+}
+.titulo{
+    color: black;
+    font-weight: 600;
+    margin: 10px 0px;
+    grid-column: 2 /span 4;
+    
 }
 
 .container_imagens{
+    grid-column: 2 /span 4;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -22,12 +30,8 @@
 
 .imagens{
     width: 300px;
-    height: 400px;
+    height: 290px;
+    object-fit: cover;
+    object-position: 5px 0px 5px 5px;
 }
 
-.titulo{
-    color: black;
-    font-weight: 600;
-    margin: 20px 0px;
-    
-}
