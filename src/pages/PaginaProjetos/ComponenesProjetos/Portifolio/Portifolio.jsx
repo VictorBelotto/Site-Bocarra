@@ -33,6 +33,8 @@ const Portifolio = () => {
           <span className={styles.linhaDetalhe}></span>
           <p>{listaCircos[0].descricao}</p>
         </div>
+        <span className={`${styles.linhaDetalhe} ${styles.linhaDetalhe2}`}></span>
+
       </section>
     </div>
   

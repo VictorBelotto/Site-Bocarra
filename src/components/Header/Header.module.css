@@ -1,5 +1,3 @@
-
-
 .cabecalho{
     display: flex;
     background-color: #040d26;
@@ -11,16 +9,44 @@
     width: 250px;
 }
 
-.navBar{
-    display: flex;
-    gap: 10px;
-    padding-right: 40px;
-}
-
-.navBar_a{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
+.navBar a {
+    font-size: 18px;
+    color: #e1e1e1;
     font-weight: 600;
-    letter-spacing: 1.5px;
-}
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+    margin: 0 10px;
+  }
+  
+  nav a:focus,
+  nav a:hover {
+    color: #fff;
+  }
+  
+  nav a:focus:after,
+  nav a:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  nav a:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(206, 42, 52);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }

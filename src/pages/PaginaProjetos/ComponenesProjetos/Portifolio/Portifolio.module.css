@@ -33,7 +33,7 @@
 .container_conteudo{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
 }
 
 /*Imagens */
@@ -89,3 +89,10 @@
 .containerDescricao .linhaDetalhe{
   width: 30%;
 }
+
+.linhaDetalhe2{
+  grid-row: 3;
+  grid-column: 3 / span 2;
+  align-self: end;
+}
+
