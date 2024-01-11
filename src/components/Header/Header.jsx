@@ -7,8 +7,9 @@ const Header = ()=> {
         <h1><img src={LogoBranco} alt="logo" className={styles.logo} /></h1>
         <nav className={styles.navBar}>
             <a href="/" className={styles.navBar_a}>Home</a>        
+            <a href="/" className={styles.navBar_a}>Galeria</a>        
             <a href="/" className={styles.navBar_a}>Empresa</a>        
-            <a href="/" className={styles.navBar_a}>Contatos</a>        
+            <a href="/teste" className={styles.navBar_a}>Contatos</a>        
         </nav>
     </header>
   )

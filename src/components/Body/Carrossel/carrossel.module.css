@@ -1,5 +1,59 @@
-.imagem{
-  width: 80%;
-  height: 350px;
-  
+.container_carrossel {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.info {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  z-index: 2; 
+  display: flex;
+  flex-direction: column;
+}
+
+.info h5{
+  margin-bottom: 8px;
+  margin-left: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.info span{
+  width: 130px;
+  height: 3px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.info h1{
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: relative;
+  padding: 15px; 
+  background-color: #040d26; 
+  display: inline-block; 
+}
+
+
+
+.slide {
+  grid-column: 1 / span 6;
+  position: relative; 
+}
+
+.imagem {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.ativo {
+  opacity: 1;
 }
