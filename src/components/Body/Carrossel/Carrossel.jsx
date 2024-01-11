@@ -14,9 +14,9 @@ const Carrossel = () => {
   return (
     <div className={styles.container_carrossel}>
       <div className={styles.info}>
-        <h5>Algum titulo maneiro</h5>
+        <h5>Seu circo como você nunca viu</h5>
         <span></span>
-        <h1>Bocarra <br/> mensagem alguma</h1>
+        <h1>Bocarra Circus<br/> Referência no que faz</h1>
         <BtnVerProjetos/>
       </div>
       <div className={styles.slide}>

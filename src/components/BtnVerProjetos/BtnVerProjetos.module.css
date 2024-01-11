@@ -29,7 +29,7 @@ button.learnMore .circle {
   margin: 0;
   width: 3rem;
   height: 3rem;
-  background: red;
+  background: rgb(206, 42, 52);
   border-radius: 1.625rem;
 }
 
@@ -40,13 +40,12 @@ button.learnMore .circle .icon.arrow {
   top: 0;
   bottom: 0;
   margin: auto;
-  background:red;
+  background:rgb(206, 42, 52);
   left: 0.625rem;
   width: 1.125rem;
   height: 0.125rem;
 }
-
-button.learnMore .circle .icon.arrow::before {
+button.learnMore .circle .icon.arrow::before{
   position: absolute;
   content: "";
   top: -0.29rem;
@@ -57,6 +56,7 @@ button.learnMore .circle .icon.arrow::before {
   border-right: 0.125rem solid white;
   transform: rotate(45deg);
 }
+
 
 /* Estilos do texto dentro do botão "learn-more" */
 button.learnMore .buttonText {
@@ -70,7 +70,7 @@ button.learnMore .buttonText {
   margin: 0 0 0 1.85rem;
   color: white;
   font-weight: 700;
-  line-height: 1.6;
+  font-size: 1rem;
   text-align: center;
   text-transform: uppercase;
   
@@ -79,13 +79,26 @@ button.learnMore .buttonText {
 /* Efeitos de hover */
 button.learnMore:hover .circle {
   width: 110%;
+  background: white;
 }
 
 button.learnMore:hover .circle .icon.arrow {
-  background: white;
+  background: rgb(206, 42, 52);
   transform: translate(1rem, 0);
 }
 
 button.learnMore:hover .buttonText {
-  color: white;
+  color: rgb(206, 42, 52);
+}
+
+button.learnMore:hover .icon.arrow::before{
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid rgb(206, 42, 52);
+  border-right: 0.125rem solid rgb(206, 42, 52);
+  transform: rotate(45deg);
 }

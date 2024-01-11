@@ -1,6 +1,7 @@
 import react from 'react'
 import Home from './pages/PaginaHome/Home'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import PaginaProjetos from './pages/PaginaProjetos/PaginaProjetos'
 
 
 const AppRoutes = ()=> {
@@ -8,7 +9,7 @@ const AppRoutes = ()=> {
     <BrowserRouter>
       <Routes>
         <Route index element={<Home/>} />
-
+        <Route path='/projetos' element={<PaginaProjetos/>}/>
       </Routes>
     </BrowserRouter>
   )

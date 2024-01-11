@@ -1,5 +1,5 @@
 import React from 'react'
-import LogoBranco from '/public/LogoBranco.png'
+import LogoBranco from '/LogoBranco.png'
 import styles from './Header.module.css'
 const Header = ()=> {
   return (
@@ -7,9 +7,9 @@ const Header = ()=> {
         <h1><img src={LogoBranco} alt="logo" className={styles.logo} /></h1>
         <nav className={styles.navBar}>
             <a href="/" className={styles.navBar_a}>Home</a>        
-            <a href="/" className={styles.navBar_a}>Galeria</a>        
+            <a href="/projetos" className={styles.navBar_a}>Projetos</a>        
             <a href="/" className={styles.navBar_a}>Empresa</a>        
-            <a href="/teste" className={styles.navBar_a}>Contatos</a>        
+            <a href="/" className={styles.navBar_a}>Contatos</a>        
         </nav>
     </header>
   )
