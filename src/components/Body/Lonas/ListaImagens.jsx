@@ -3,7 +3,6 @@ import styles from './ListaImagens.module.css';
 import ImagensCircos from '../../../functions/exportImages';
 
 const ListaImagens = () => {
-  // Crie uma instância da classe ImagensCircos
   const imagensCircos = new ImagensCircos();
 
   const listaCircos = [

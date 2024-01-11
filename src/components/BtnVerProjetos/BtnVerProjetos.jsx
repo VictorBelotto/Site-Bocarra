@@ -8,7 +8,7 @@ const BtnVerProjetos = () => {
         <span className={styles.circle} aria-hidden="true">
         <span className={`${styles.icon} ${styles.arrow}`}></span>
         </span>
-        <p className={styles.buttonText}> &nbsp;&nbsp; Ver Projetos</p>
+        <a href='/projetos' alt='Pagina Projetos' className={styles.buttonText}>&nbsp; Ver Projetos</a>
       </button>
     </div>
   )

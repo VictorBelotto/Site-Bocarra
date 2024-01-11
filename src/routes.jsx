@@ -1,7 +1,7 @@
 import react from 'react'
 import Home from './pages/PaginaHome/Home'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import PaginaProjetos from './pages/PaginaProjetos/PaginaProjetos'
+import PaginaProjetos from './pages/PaginaProjetos/PaginaProjetos.jsx'
 
 
 const AppRoutes = ()=> {

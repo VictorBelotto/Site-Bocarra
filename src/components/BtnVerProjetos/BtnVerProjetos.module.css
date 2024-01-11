@@ -1,5 +1,5 @@
 /* Estilos globais do botão */
-button {
+button{
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -12,7 +12,6 @@ button {
   font-size: inherit;
   font-family: inherit;
   margin-top: 10px;
-  letter-spacing: 2px;
 }
 
 /* Estilos específicos do botão "learn-more" */
@@ -20,6 +19,8 @@ button.learnMore {
   width: 12rem;
   height: auto;
 }
+
+
 
 /* Estilos da classe "circle" dentro do botão "learn-more" */
 button.learnMore .circle {
@@ -66,19 +67,21 @@ button.learnMore .buttonText {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 0.75rem 0;
+  padding: 0.80rem 1rem;
+  white-space: nowrap;
   margin: 0 0 0 1.85rem;
   color: white;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 15px;
   text-align: center;
   text-transform: uppercase;
-  
+  text-decoration: none;
+  letter-spacing: 2px;
 }
 
 /* Efeitos de hover */
 button.learnMore:hover .circle {
-  width: 110%;
+  width: 120%;
   background: white;
 }
 
