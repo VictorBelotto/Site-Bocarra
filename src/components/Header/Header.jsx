@@ -8,8 +8,8 @@ const Header = ()=> {
         <nav className={styles.navBar}>
             <a href="/" className={styles.navBar_a}>Home</a>        
             <a href="/projetos" className={styles.navBar_a}>Projetos</a>        
-            <a href="/" className={styles.navBar_a}>Empresa</a>        
-            <a href="/" className={styles.navBar_a}>Contatos</a>        
+            <a href="/empresa" className={styles.navBar_a}>Empresa</a>        
+            <a href="/contatos" className={styles.navBar_a}>Contatos</a>        
         </nav>
     </header>
   )

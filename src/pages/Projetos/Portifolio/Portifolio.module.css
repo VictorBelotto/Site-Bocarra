@@ -34,6 +34,7 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, auto);
+  margin-bottom: 20px;
 }
 
 /*Imagens */
@@ -69,10 +70,11 @@
   font-weight: 700;
   font-size: 1.8rem;
   letter-spacing: 3.5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .containerDescricao p{
+  letter-spacing: 1.2px;
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -87,10 +89,14 @@
 }
 
 .containerDescricao .linhaDetalhe{
+  height: 3px;
   width: 30%;
 }
 
 .linhaDetalhe2{
+  height: 3px;
+  margin-top: 25px;
+  width: 100%;
   grid-row: 3;
   grid-column: 3 / span 2;
   align-self: end;

@@ -81,7 +81,7 @@ button.learnMore .buttonText {
 
 /* Efeitos de hover */
 button.learnMore:hover .circle {
-  width: 120%;
+  width: 110%;
   background: white;
 }
 
