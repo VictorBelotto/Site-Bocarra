@@ -1,7 +1,7 @@
 import react from 'react'
-import Home from './pages/PaginaHome/Home'
+import Home from './pages/Home/Home.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import PaginaProjetos from './pages/PaginaProjetos/PaginaProjetos.jsx'
+import Projetos from './pages/Projetos/Projetos.jsx'
 
 
 const AppRoutes = ()=> {
@@ -9,7 +9,7 @@ const AppRoutes = ()=> {
     <BrowserRouter>
       <Routes>
         <Route index element={<Home/>} />
-        <Route path='/projetos' element={<PaginaProjetos/>}/>
+        <Route path='/projetos' element={<Projetos/>}/>
       </Routes>
     </BrowserRouter>
   )

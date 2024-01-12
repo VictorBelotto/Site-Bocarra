@@ -1,5 +1,5 @@
 import React from 'react'
-import LogoBranco from '/LogoBranco.png'
+import LogoBranco from '../../assets/images/bocarra_visual/LogoBranco.png'
 import styles from './Header.module.css'
 const Header = ()=> {
   return (

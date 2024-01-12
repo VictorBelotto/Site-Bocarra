@@ -1,7 +1,7 @@
 import React from 'react'
-import CircoChrysostenes from '/CircoChrysostenes.jpg' 
+import CircoChrysostenes from '../../../assets/images/bocarra_visual/CircoChrysostenes.jpg' 
 import styles from './Historia.module.css'
-import Logo from '/Logo.png'
+import Logo from '../../../assets/images/bocarra_visual/Logo.png'
 
 const Historia = () => {
   return (

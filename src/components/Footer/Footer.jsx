@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Footer.module.css'
-import LogoBranco from '/public/LogoBranco.png'
+import LogoBranco from '../../assets/images/bocarra_visual/LogoBranco.png'
 import { FaFacebook, FaInstagram, FaWhatsapp  } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 

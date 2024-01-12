@@ -1,16 +1,15 @@
 import React from 'react'
 import styles from './Portifolio.module.css';
-import ImagensCircos from '../../../../functions/exportImages';
-import Logo from '/Logo.png'
+import imagensCircoDosSonhos from '../../../functions/exportImagesCircos/imagensCircoDosSonhos';
+
+import Logo from '../../../assets/images/bocarra_visual/Logo.png'
 
 const Portifolio = () => {
-  const imagensCircos = new ImagensCircos();
-
   const listaCircos = [
     {
       titulo: 'Circo dos Sonhos',
       descricao: 'Lona Tensionada de cupula redonda com 40,00m de diâmetro, marquise 25,00 X 35,00 com pintura exclusiva - (2022)',
-      imagens: imagensCircos.circoDosSonhos
+      imagens: imagensCircoDosSonhos.circoDosSonhos
     }
   ];
 

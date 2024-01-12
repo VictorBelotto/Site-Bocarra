@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import styles from './carrossel.module.css';
-import img1 from '../../../images/imagens_carrossel/1.jpg';
-import img2 from '../../../images/imagens_carrossel/2.jpg';
-import img3 from '../../../images/imagens_carrossel/3.jpeg';
-import img4 from '../../../images/imagens_carrossel/4.jpg';
+import img1 from '../../../assets/images/imagens_carrossel/1.jpg';
+import img2 from '../../../assets/images/imagens_carrossel/2.jpg';
+import img3 from '../../../assets/images/imagens_carrossel/3.jpeg';
+import img4 from '../../../assets/images/imagens_carrossel/4.jpg';
 import { Button } from '@mui/material';
-import BtnVerProjetos from '../../BtnVerProjetos/BtnVerProjetos';
+import BtnVerProjetos from '../BtnVerProjetos/BtnVerProjetos.jsx';
 
 const Carrossel = () => {
   const imagens = [img3];
