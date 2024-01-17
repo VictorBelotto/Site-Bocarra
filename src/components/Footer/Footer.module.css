@@ -98,3 +98,18 @@
   background-color: #1A1756;
   padding: 3px;
 }
+
+
+@media (max-width: 450px){
+  .rodapeConteudo{
+    margin-top: 10px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .direitos{
+    margin-bottom: 1rem;
+  }
+}
