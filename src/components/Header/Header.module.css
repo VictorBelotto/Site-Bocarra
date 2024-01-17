@@ -16,6 +16,9 @@
 
 .menu{
   display: flex;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+  padding: 15px;
 }
 
 .navBar_a {
@@ -59,8 +62,8 @@
     transition-property: width, left;
   }
 
-  /* */
- 
+
+  /* menu bar*/ 
 
   .toggle {
     position: relative;
@@ -126,17 +129,18 @@
     display: none;
   }
 
-  @media (max-width: 450px){
+  @media (max-width: 770px){
     .menu {
       display: none;
       position: absolute;
       z-index: 5;
       top: 4rem;
-      left: 0;
-      width: 100%;
-      height: calc(100vh - 4rem);
-      background-color: blue;
+      right: 0;
+      width: 50%;
+      height: calc(40vh - 4rem);
+      background-color: rgba(255, 255, 255, 0.95);
       text-align: center;
+      justify-content: center;
     }
     
     .menuBar{
@@ -148,7 +152,13 @@
     }
 
     .checkbox:checked ~ .menu{
-      display: block;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .navBar_a{
+      color: rgb(206, 42, 52);
     }
 
   }

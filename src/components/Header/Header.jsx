@@ -2,16 +2,11 @@ import React from 'react'
 import LogoBranco from '../../assets/images/bocarra_visual/L1Preto.svg'
 import styles from './Header.module.css'
 const Header = ()=> {
-
- 
-
   return (
     <header className={styles.cabecalho}>
-      <div className={styles.containerLogo}>
+      <a href='/' className={styles.containerLogo}>
         <img src={LogoBranco} alt="Logo" className={styles.logo} />
-      </div>
-     
-     
+      </a>
         <nav className={styles.navBar}>
           <input  type="checkbox" id={styles.checkbox} className={styles.checkbox}/>
             <label htmlFor={styles.checkbox} className={styles.toggle}>
