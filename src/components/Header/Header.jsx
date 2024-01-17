@@ -16,24 +16,24 @@ const Header = ()=> {
             </label>
 
           <ul className={styles.menu}>
-            <li>
-              <a href="/" className={styles.navBar_a}>
+            <li className={styles.navBar_li}>
+              <a href="/" >
                 Home
               </a>
             </li>
-            <li>
-              <a href="/projetos" className={styles.navBar_a}>
+            <li className={styles.navBar_li}>
+              <a href="/projetos" >
                 Projetos
               </a>
             </li>
-            <li>
-              <a href="/empresa" className={styles.navBar_a}>
+            <li className={styles.navBar_li}>
+              <a href="/empresa" >
                 Empresa
               </a>
             </li>
-            <li>
-              <a href="/contatos" className={styles.navBar_a}>
-                Contatos
+            <li className={styles.navBar_li}>
+              <a href="/contatos" >
+                Entre em contato
               </a>
             </li>
           </ul>

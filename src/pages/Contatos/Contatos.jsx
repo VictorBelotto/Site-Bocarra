@@ -9,20 +9,16 @@ import styles from './Contatos.module.css'
 
 const Contatos = () => {
   return (
-    <div>
-      <Header/>
-      <div className={styles.container}>
-        <div className={styles.containerForm}>
+    <>
+      <section className={styles.contatos}>
+        <div className={styles.container}>
           <Formulario/>      
-          <div className={styles.mapa}>
+          <aside className={styles.mapa}>
             <Mapa/>
-          </div>
+          </aside>
         </div>
-      </div>
-     
-        
-      <Footer/>
-    </div>
+      </section>
+    </>
   )
 }
 

@@ -1,17 +1,25 @@
 .rodape{
   display: flex;
   flex-direction: column;
-  width: 100%;
-  position: relative;
-  bottom: 0;
-  left: 0;
-}
-
-.rodapeConteudo{
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: #d03438;
+  color: white;
+
+  gap: 32px;
+  padding: 0 0 16px 0;
+}
+
+.social__container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #1a1756e5 ; 
+}
+
+.social__container h2 {
+  color: ghostwhite;
 }
 
 .social_list{
@@ -21,8 +29,6 @@
   width: 300px;
   justify-content: center;
   align-items: center;
-  background-color: rgb(244, 244, 244);
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
 .social_list ul{
@@ -34,7 +40,6 @@
 .info{
   display: flex;
   flex-direction: column;
-  gap: 15px;
   font-size: 1.2rem;
   align-items: end;
 }
@@ -46,43 +51,23 @@
   letter-spacing: 0px;
 }
 
-
-
-
 /*Icones*/
 
-
-.facebook{
-  font-size: 30px;
-  fill: #ffffff;
-}
-
-
-
-.instagram {
-  fill: #ffffff;
-  font-size: 30px;
-  margin: 0;
-}
-
-.whatsapp{
-  font-size: 30px;
-  fill: #ffffff;
-}
-.email{
-  font-size: 30px;
+.facebook, .instagram, .whatsapp, .email{
+  font-size: 28px;
   fill: #ffffff;
 }
 
 .direitos{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 4px;
   justify-content: center;
   align-items: center;
 }
 
 .direitos p{
-  color: black;
+  color: white;
   letter-spacing: 0px;
   font-size: 0.9rem;
   font-weight: 600;
@@ -92,16 +77,14 @@
 .direitos a{
   color: white;
   letter-spacing: 0px;
-  font-size: 0.9rem;
+  font-size: 12px;
   font-weight: 600;
   text-decoration: none;
-  background-color: #1A1756;
   padding: 3px;
 }
 /*Social media icons*/
 
 .icon{
-  background-color: #313131;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,10 +111,6 @@
 }
 
 
-
-
-
-
 @media (max-width: 450px){
   .rodapeConteudo{
     margin-top: 10px;
@@ -143,5 +122,13 @@
 
   .direitos{
     margin-bottom: 1rem;
+  }
+
+  .direitos p{
+    font-size: 0.8rem;
+  }
+
+  .social__container h2{
+    display: none;
   }
 }

@@ -6,8 +6,12 @@ import { SiGmail } from "react-icons/si";
 
 const Footer = ()=> {
   return (
-    <div className={styles.rodape}>
-        <div className={styles.rodapeConteudo}>
+    <section className={styles.rodape}>
+        
+        <section className={styles.social__container}>
+
+            <h2>Conheça nossas redes sociais:</h2>
+
           <div className={styles.social_list}>
             <ul>
               <li >
@@ -26,14 +30,18 @@ const Footer = ()=> {
               </li>
             </ul>
            </div>   
-          <img style={{width: '200px', marginRight: '10px'}} src={Logo} alt="/" />
-        </div>
+            
+          </section>
+
+     <img style={{width: '200px', marginRight: '10px'}} src={Logo} alt="/" />
+       
 
         <div className={styles.direitos}>
-          <p>&copy; Bocarra Circus. Todos os direitos reservados 2024.</p>
+          <p>&copy; Bocarra Circus. </p>
+          <p>Todos os direitos reservados 2024.</p>
           <a href="https://github.com/VictorBelotto" target="_blank" rel="noopener noreferrer">Desenvolvido por Victor Belotto</a>
         </div>
-    </div>
+    </section>
    
   )
 }

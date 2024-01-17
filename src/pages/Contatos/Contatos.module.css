@@ -1,4 +1,4 @@
-.container{
+.contatos{
   display: flex;
   justify-content: center;
   margin: 30px 0px;
@@ -6,11 +6,12 @@
   
 }
 
-.containerForm{
+.container{
   display: flex;
   justify-content: center;
   gap: 100px;
   width: 80%;
+  max-width: 1000px;
 }
 
 .mapa{
