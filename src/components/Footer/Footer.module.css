@@ -1,33 +1,31 @@
 .rodape{
-  background: rgb(26, 23, 86);
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 200px;
   position: relative;
   bottom: 0;
   left: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+}
+
+.rodapeConteudo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .social_list{
-  margin: 5px 10px;
-  grid-column: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .social_list ul{
   display: flex;
-  margin-bottom: 30px;
   flex-direction: row;
   gap: 1.5rem;
-  
-  
 }
 
 .info{
-  grid-column: 2/ span 2;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -39,25 +37,10 @@
   color: white;
   font-size: 1rem;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
 }
 
-.mapa{
-  grid-column: 2/ span 2;
-  border: 0px;
-  margin: 5px 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  justify-content: end;
 
-}
-
-.mapa iframe{
-  width: 33%;
-  height: 100%;
-  
-}
 
 
 /*Icones*/
@@ -89,4 +72,29 @@
 .email{
   font-size: 35px;
   fill: #ea4335;
+}
+
+.direitos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.direitos p{
+  color: black;
+  letter-spacing: 0px;
+  font-size: 0.9rem;
+  font-weight: 600;
+
+}
+
+.direitos a{
+  color: white;
+  letter-spacing: 0px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #1A1756;
+  padding: 3px;
 }

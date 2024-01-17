@@ -1,0 +1,19 @@
+.container{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+  width: 100%;
+  
+}
+
+.containerForm{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  width: 80%;
+}
+
+.mapa{
+  display: flex;
+  width: 100%;
+}

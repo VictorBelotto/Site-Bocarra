@@ -1,13 +1,13 @@
 import React from 'react'
 import CircoChrysostenes from '../../../assets/images/bocarra_visual/CircoChrysostenes.jpg' 
 import styles from './Historia.module.css'
-import Logo from '../../../assets/images/bocarra_visual/Logo.png'
+import Logo from '../../../assets/images/bocarra_visual/rinoRetangulo.svg'
 
 const Historia = () => {
   return (
     <section className={styles.mainContainer}>
       <div className={styles.containerTitulo}>
-        <span><img src={Logo} alt="Logo Bocarra" style={{width: '50px', padding: '5px'}} /></span>
+        <span><img src={Logo} alt="Logo Bocarra" style={{width: '150px', padding: '5px', }} /></span>
         
         <h2>Nossa Historia</h2>
         <p>Especialistas em lonas de Circo  desde 1900</p>

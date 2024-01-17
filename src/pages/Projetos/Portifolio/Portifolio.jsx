@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Portifolio.module.css';
 import listaCircos from './listaCircos'
 
-import Logo from '../../../assets/images/bocarra_visual/Logo.png'
+import Logo from '../../../assets/images/bocarra_visual/rinoRetangulo.svg'
 
 const Portifolio = () => {
 
@@ -10,7 +10,7 @@ const Portifolio = () => {
   return (
     <div className={styles.mainContainer}>
         <div className={styles.containerTitulo}>
-           <span><img src={Logo} alt="Logo Bocarra" style={{width: '50px', padding: '5px'}} /></span>
+           <span><img src={Logo} alt="Logo Bocarra" style={{width: '150px', padding: '5px'}} /></span>
            <h1>Nossos Projetos</h1>
            <span className={styles.linhaDetalhe}></span>
           </div>

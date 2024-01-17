@@ -1,0 +1,16 @@
+.mapa{
+  grid-column: 2/ span 2;
+  border: 0px;
+  margin: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: end;
+
+}
+
+.mapa iframe{
+  width: 33%;
+  height: 100%;
+  
+}
