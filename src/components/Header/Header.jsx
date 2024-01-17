@@ -14,7 +14,7 @@ const Header = ()=> {
         <img src={LogoBranco} alt="Logo" className={styles.logo} />
       </div>
       <div className={styles.menuBar}>
-      <input type="checkbox" id={styles.checkbox} checked={isOpen} onChange={toggleNavBar} />
+      <input className={styles.btn_} type="checkbox" id={styles.checkbox} checked={isOpen} onChange={toggleNavBar} />
       <label htmlFor={styles.checkbox} className={styles.toggle}>
         <div className={styles.bar + ' ' + styles['bar-top']}></div>
         <div className={styles.bar + ' ' + styles['bar-middle']}></div>
