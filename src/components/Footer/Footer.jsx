@@ -10,23 +10,23 @@ const Footer = ()=> {
         <div className={styles.rodapeConteudo}>
           <div className={styles.social_list}>
             <ul>
-              <li>
-                <a  href="/"><FaFacebook  className={styles.facebook} /></a>
+              <li >
+                <a className={`${styles.icon} ${styles.containerFacebook}`}  href="/"><FaFacebook className={styles.facebook} /></a>
               </li>
               <li>
-                <a className={styles.instagramGradientBackground} href="/">
+                <a className={`${styles.icon} ${styles.containerInstagram}`} href="/">
                   <FaInstagram className={styles.instagram} />
                 </a>
               </li>
               <li>
-                <a href="/"><FaWhatsapp className={styles.whatsapp}  /></a>
+                <a className={`${styles.icon} ${styles.containerWhatsapp}`} href="/"><FaWhatsapp className={styles.whatsapp}  /></a>
               </li>
-              <li>
-                <a  href="/"><SiGmail className={styles.email} /></a>
+              <li >
+                <a className={`${styles.icon} ${styles.containerEmail}`} href="/"><SiGmail className={styles.email} /></a>
               </li>
             </ul>
            </div>   
-          <img style={{width: '200px'}} src={Logo} alt="/" />
+          <img style={{width: '200px', marginRight: '10px'}} src={Logo} alt="/" />
         </div>
 
         <div className={styles.direitos}>
