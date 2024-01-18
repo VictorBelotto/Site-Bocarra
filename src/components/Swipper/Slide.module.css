@@ -1,21 +1,50 @@
 .imagem{
   width: 100%;
   height: auto;
-  aspect-ratio: 2 / 3;
+  aspect-ratio: 3 / 2;
   object-fit: cover;
+}
+.imagem:hover{
+  transform: scale(1.2);
+  cursor: grab;
 }
 
 .swiper {
   width: 80%;
-  height: 120%;
+  height: 25%;
   overflow: hidden; 
+
 }
 
 .swiper__slide {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 14px;
+  border-radius: 8px;
   overflow: hidden; 
 }
+
+
+  .imagem__mobile{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+  }
+
+  
+  .swiper__mobile {
+    width: 80%;
+    height: 120%;
+    overflow: hidden; 
+  }
+  
+  .swiper__slide__mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    overflow: hidden; 
+  }
+  
 

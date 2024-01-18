@@ -40,9 +40,16 @@
 /*Imagens */
 
 .container_slidesMobile{
+  display: none;
+  width: 100%;
+  overflow: hidden; 
+}
+.container_slides{
   display: flex;
   width: 100%;
   overflow: hidden; 
+  justify-content: center;
+  align-items: center;
 }
 
 /*Descrição das lonas*/
@@ -114,4 +121,12 @@
     display: flex;
     justify-content: center;
   }
+  .container_slidesMobile{
+    display: flex;
+  }
+  .container_slides{
+    display: none;
+  }
 }
+
+

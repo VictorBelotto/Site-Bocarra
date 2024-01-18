@@ -2,11 +2,9 @@ import React from 'react';
 import styles from './Portifolio.module.css';
 import listaCircos from './listaCircos';
 import Logo from '../../../assets/images/bocarra_visual/rinoRetangulo.svg';
+import SlideMobile from '../../../components/Swipper/SlideMobile';
 import Slide from '../../../components/Swipper/Slide';
-import {Swiper, SwiperSlide} from 'swiper/react'
-import {EffectCards} from 'swiper/modules';
-import 'swiper/css'
-import 'swiper/css/effect-cards';
+
 
 const Portifolio = () => {
   return (
@@ -28,8 +26,12 @@ const Portifolio = () => {
             <p>{circo.descricao}</p>
           </div>
 
-            <section className={styles.container_slidesMobile}>
+            <section className={styles.container_slides}>
               <Slide imagens={circo.imagens}/>
+            </section>  
+
+            <section className={styles.container_slidesMobile}>
+              <SlideMobile imagens={circo.imagens}/>
             </section>
 
           <span className={`${styles.linhaDetalhe} ${styles.linhaDetalhe2}`}></span>

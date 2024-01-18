@@ -1,18 +1,22 @@
 import React from 'react'
 import styles from './Slide.module.css'
 import {Swiper, SwiperSlide} from 'swiper/react'
-import {EffectCards} from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 import 'swiper/css'
-import 'swiper/css/effect-cards';
+import 'swiper/css/pagination';
 
 const Slide = ({imagens}) => {
   return (
     <>
       <Swiper  
         className={styles.swiper}
-        effect={'cards'}
-        grabCursor={true}
-        modules={[EffectCards]}
+        slidesPerView={3}
+        spaceBetween={30}
+        centeredSlides={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
         loop={true}
         >
         {imagens.map((imagem, index)=>(
