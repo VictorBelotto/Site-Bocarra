@@ -6,10 +6,21 @@ import 'swiper/css'
 import 'swiper/css/effect-cards';
 
 const Slide = ({imagens}) => {
-  const slideImage = [imagens]
   return (
     <>
-    
+      <Swiper  
+        className={styles.swiper}
+        effect={'cards'}
+        grabCursor={true}
+        modules={[EffectCards]}
+        loop={true}
+        >
+        {imagens.map((imagem, index)=>(
+          <SwiperSlide  className={styles.swiper__slide} key={index}>
+              <img className={styles.imagem} src={imagem} alt={imagem} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </>
     
   )

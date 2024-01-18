@@ -28,21 +28,8 @@ const Portifolio = () => {
             <p>{circo.descricao}</p>
           </div>
 
-            <section className={styles.container_imagens}>
-              <Swiper  
-                className={styles.swiper}
-                effect={'cards'}
-                grabCursor={true}
-                modules={[EffectCards]}
-                loop={true}
-              >
-                {circo.imagens.map((imagem, index)=>(
-                  <SwiperSlide  className={styles.swiper__slide} key={index}>
-                      <img className={styles.imagem} src={imagem} alt={imagem} />
-                  </SwiperSlide>
-                ))}
-              
-              </Swiper>
+            <section className={styles.container_slidesMobile}>
+              <Slide imagens={circo.imagens}/>
             </section>
 
           <span className={`${styles.linhaDetalhe} ${styles.linhaDetalhe2}`}></span>

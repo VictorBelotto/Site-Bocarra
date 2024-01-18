@@ -39,30 +39,10 @@
 
 /*Imagens */
 
-.container_imagens{
+.container_slidesMobile{
   display: flex;
   width: 100%;
 }
-
-
-.imagem{
-  width: 300px;
-  height: 290px;
-  object-fit: cover;
-}
-
-.swiper {
-  width: 240px;
-  height: 320px;
-}
-
-.swiper__slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 18px;
-}
-
 
 /*Descrição das lonas*/
 .containerDescricao{
