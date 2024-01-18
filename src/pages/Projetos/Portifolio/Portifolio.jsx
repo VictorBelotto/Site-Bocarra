@@ -1,40 +1,55 @@
-import React from 'react'
+import React from 'react';
 import styles from './Portifolio.module.css';
-import listaCircos from './listaCircos'
-import Logo from '../../../assets/images/bocarra_visual/rinoRetangulo.svg'
+import listaCircos from './listaCircos';
+import Logo from '../../../assets/images/bocarra_visual/rinoRetangulo.svg';
+import Slide from '../../../components/Swipper/Slide';
+import {Swiper, SwiperSlide} from 'swiper/react'
+import {EffectCards} from 'swiper/modules';
+import 'swiper/css'
+import 'swiper/css/effect-cards';
 
 const Portifolio = () => {
-
-
   return (
     <div className={styles.mainContainer}>
-        <div className={styles.containerTitulo}>
-           <span><img src={Logo} alt="Logo Bocarra" style={{width: '150px', padding: '5px'}} /></span>
-           <h1>Nossos Projetos</h1>
-           <span className={styles.linhaDetalhe}></span>
-          </div>
+
+      <div className={styles.containerTitulo}>
+        <span>
+          <img src={Logo} alt="Logo Bocarra" style={{ width: '150px', padding: '5px' }} />
+        </span>
+        <h1>Nossos Projetos</h1>
+        <span className={styles.linhaDetalhe}></span>
+      </div>
 
       {listaCircos.map((circo) => (
-         <section className={styles.container_conteudo}>
-            <div className={styles.containerDescricao}>
-              <h3>{circo.titulo}</h3>  
-              <span className={styles.linhaDetalhe}></span>
-              <p>{circo.descricao}</p>
-            </div>
-            
-           <div className={styles.container_imagens}>
-             {circo.imagens.map((imagem, index) => (
-               <img key={index} className={styles.imagens} src={imagem} alt="/" />
-             ))}
-           </div>
-        
-           <span className={`${styles.linhaDetalhe} ${styles.linhaDetalhe2}`}></span>
-   
-         </section>
+        <section className={styles.container_conteudo} key={circo.titulo}>
+          <div className={styles.containerDescricao}>
+            <h3>{circo.titulo}</h3>
+            <span className={styles.linhaDetalhe}></span>
+            <p>{circo.descricao}</p>
+          </div>
+
+            <section className={styles.container_imagens}>
+              <Swiper  
+                className={styles.swiper}
+                effect={'cards'}
+                grabCursor={true}
+                modules={[EffectCards]}
+                loop={true}
+              >
+                {circo.imagens.map((imagem, index)=>(
+                  <SwiperSlide  className={styles.swiper__slide} key={index}>
+                      <img className={styles.imagem} src={imagem} alt={imagem} />
+                  </SwiperSlide>
+                ))}
+              
+              </Swiper>
+            </section>
+
+          <span className={`${styles.linhaDetalhe} ${styles.linhaDetalhe2}`}></span>
+        </section>
       ))}
     </div>
-  
   );
-}
+};
 
-export default Portifolio
+export default Portifolio;

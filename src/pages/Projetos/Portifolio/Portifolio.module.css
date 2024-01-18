@@ -31,30 +31,38 @@
 
 /*Conteudo*/
 .container_conteudo{
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, auto);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   margin-bottom: 20px;
 }
 
 /*Imagens */
 
 .container_imagens{
-  grid-column: 2 /span 4;
-  grid-row: 2;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 5px;
-  margin-top: 15px;
+  width: 100%;
 }
 
-.imagens{
+
+.imagem{
   width: 300px;
   height: 290px;
   object-fit: cover;
-  object-position: 5px 0px 5px 5px;
 }
+
+.swiper {
+  width: 240px;
+  height: 320px;
+}
+
+.swiper__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+}
+
 
 /*Descrição das lonas*/
 .containerDescricao{
