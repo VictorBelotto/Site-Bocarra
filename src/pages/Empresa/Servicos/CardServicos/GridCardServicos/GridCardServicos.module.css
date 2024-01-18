@@ -1,7 +1,9 @@
 .gridContainer{
-  margin: 10px 0px;
+  margin-top: 2%;
+  width: 80%;
   display: grid;
   justify-items: center;
+  justify-content: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
 }
@@ -47,4 +49,16 @@
   position: relative;
   top: 50%;
   right: 25%;
+}
+
+@media (max-width: 770px){
+  .gridContainer{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+  }
+
+  .linhaL, .linhaD, .linhaCentral{
+    display: none;
+  }
 }

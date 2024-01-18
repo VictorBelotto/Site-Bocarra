@@ -1,7 +1,4 @@
 import React from 'react'
-import Endereco from './Endereco/Endereco'
-import Header from '../../components/Header/Header'
-import Footer from '../../components/Footer/Footer'
 import Formulario from './Formulario/Formulario'
 import Mapa from '../../components/Mapa/Mapa'
 import styles from './Contatos.module.css'
@@ -14,6 +11,7 @@ const Contatos = () => {
         <div className={styles.container}>
           <Formulario/>      
           <aside className={styles.mapa}>
+            <h3>Endereço</h3>
             <Mapa/>
           </aside>
         </div>

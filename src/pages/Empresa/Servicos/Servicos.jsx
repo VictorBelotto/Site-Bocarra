@@ -49,8 +49,10 @@ const Servicos = () => {
 
       </div>
     */}
+      <div className={styles.container__card}>
+        <GridCardServicos/>
+      </div>
 
-    <GridCardServicos/>
   </div>  )
 }
 

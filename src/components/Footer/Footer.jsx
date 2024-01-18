@@ -18,7 +18,8 @@ const Footer = ()=> {
                 <a className={`${styles.icon} ${styles.containerFacebook}`}  href="/"><FaFacebook className={styles.facebook} /></a>
               </li>
               <li>
-                <a className={`${styles.icon} ${styles.containerInstagram}`} href="/">
+                <a className={`${styles.icon} ${styles.containerInstagram}`} 
+                target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/bocarracircus/">
                   <FaInstagram className={styles.instagram} />
                 </a>
               </li>
