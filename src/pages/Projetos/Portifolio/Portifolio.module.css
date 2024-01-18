@@ -42,6 +42,7 @@
 .container_slidesMobile{
   display: flex;
   width: 100%;
+  overflow: hidden; 
 }
 
 /*Descrição das lonas*/
