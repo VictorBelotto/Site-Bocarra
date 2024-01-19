@@ -1,8 +1,15 @@
-import circo_dos_sonhos1 from '../../assets/images/circo_dos_sonhos/1.jpg'
-import circo_dos_sonhos2 from '../../assets/images/circo_dos_sonhos/2.jpg'
-import circo_dos_sonhos3 from '../../assets/images/circo_dos_sonhos/3.jpg'
-
-const imagens = {
-  circoDosSonhos : [circo_dos_sonhos1, circo_dos_sonhos2, circo_dos_sonhos3]
+async function carregarImagens() {
+  const context = import.meta.glob('/src/assets/images/circo_dos_sonhos/*.jpg');
+  return context;
 }
+const image = await carregarImagens();
+const array = Object.values(image);
+const imagens = {
+  circoDosSonhos: [],
+};
+array.forEach((img) => {
+  imagens.circoDosSonhos.push(
+   img.name
+  );
+});
 export default imagens;

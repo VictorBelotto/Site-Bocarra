@@ -1,11 +1,17 @@
-import img1 from '../../assets/images/circo_fantastico/1.jpg'
-import img2 from '../../assets/images/circo_fantastico/2.jpg'
-import img3 from '../../assets/images/circo_fantastico/3.jpg'
-import img4 from '../../assets/images/circo_fantastico/4.jpg'
-
-
-const imagens = {
-  circoFantastico: [img1, img2, img4, img3 ]
+async function carregarImagens() {
+  const context = import.meta.glob('/src/assets/images/circo_fantastico/*.jpg');
+  return context;
 }
+const image = await carregarImagens();
+const array = Object.values(image);
+const imagens = {
+  circoFantastico: [],
+};
+array.forEach((img) => {
+  imagens.circoFantastico.push(
+   img.name
+  );
+});
+export default imagens;
 
-export default imagens
+
