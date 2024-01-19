@@ -12,13 +12,13 @@ const listaCircos = [
 
   {
     titulo: 'Circo Fantástico',
-    descricao: 'Lona tensionada de cupula redonda com 38,00 metros diâmetro, marquise tal x tal, - (2019)',
+    descricao: 'Lona tensionada de cupula redonda com 38,00m diâmetro, marquise 10 x 10 - (2019)',
     imagens: imagensCircoFantastico.circoFantastico
   },
   
   {
     titulo: 'Circo Ramito',
-    descricao: 'Lona tensionada de cupula tradicional com 34,00 metros de diâmetro e 8 Mastareus - (2017)',
+    descricao: 'Lona tensionada de cupula tradicional com 34,00m de diâmetro e 8 Mastareus - (2017)',
     imagens: imagensCircoRamito.circoRamito
   }
 ];

@@ -23,12 +23,12 @@ const Header = ()=> {
             </li>
             <li className={styles.navBar_li}>
               <a href="/projetos" >
-                Projetos
+                Galeria
               </a>
             </li>
             <li className={styles.navBar_li}>
               <a href="/empresa" >
-                Empresa
+                Nossa História
               </a>
             </li>
             <li className={styles.navBar_li}>

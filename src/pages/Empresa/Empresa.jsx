@@ -1,6 +1,6 @@
 import React from 'react'
 import Historia from './Historia/Historia'
-import Servicos from './Servicos/Servicos'
+import Servicos from '../../components/Servicos/Servicos'
 
 const Empresa = () => {
   return (

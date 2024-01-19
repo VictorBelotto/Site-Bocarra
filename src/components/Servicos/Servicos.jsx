@@ -6,8 +6,20 @@ import GridCardServicos from './CardServicos/GridCardServicos/GridCardServicos'
 const Servicos = () => {
   return (
     <div className={styles.container}>
+      <span className={styles.linhaDetalhe}></span>
+      <section className={styles.conteConosco}>
+        <span className={styles.linhaDetalhe}></span>
+        <p>
+          Conte conosco para lonas excepcionais e um serviço profissional que vai além da fabricação
+        </p>
+        <p>
+          Abraçando a rica herança circense que impulsiona nossa paixão pela excelência
+        </p>
+      </section >
+      <span className={styles.linhaDetalhe}></span>
+      
      
-    <h2>Nossas Principais Atividades e Serviços</h2>
+    <h2>Nossos Serviços</h2>
 
      {/* 
       <div className={styles.listaAtividades}>
@@ -49,6 +61,8 @@ const Servicos = () => {
 
       </div>
     */}
+
+          
       <div className={styles.container__card}>
         <GridCardServicos/>
       </div>

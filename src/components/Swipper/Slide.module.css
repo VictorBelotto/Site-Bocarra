@@ -13,7 +13,14 @@
   width: 80%;
   height: 25%;
   overflow: hidden; 
-
+  --swiper-navigation-color: #d03438;
+  --swiper-navigation-sides-offset: 0px;
+  --swiper-navigation-size: 60px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-pagination-color:#d03438 ;
+  --swiper-pagination-bullet-size: 14px;
+  --swiper-pagination-bullet-width: 14px;
+  --swiper-pagination-bullet-height: 14px;
 }
 
 .swiper__slide {

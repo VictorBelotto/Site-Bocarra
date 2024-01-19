@@ -14,16 +14,16 @@ const Portifolio = () => {
         <span>
           <img src={Logo} alt="Logo Bocarra" style={{ width: '150px', padding: '5px' }} />
         </span>
-        <h1>Nossos Projetos</h1>
+        <h1>Galeria de Projetos</h1>
         <span className={styles.linhaDetalhe}></span>
       </div>
 
       {listaCircos.map((circo) => (
         <section className={styles.container_conteudo} key={circo.titulo}>
           <div className={styles.containerDescricao}>
-            <h3>{circo.titulo}</h3>
+            <h2>{circo.titulo}</h2>
             <span className={styles.linhaDetalhe}></span>
-            <p>{circo.descricao}</p>
+            <p className={styles.descricao}>{circo.descricao}</p>
           </div>
 
             <section className={styles.container_slides}>

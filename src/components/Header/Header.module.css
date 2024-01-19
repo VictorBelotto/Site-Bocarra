@@ -141,19 +141,23 @@
   }
 
   @media (max-width: 770px){
+    .cabecalho{
+      height: 4rem;
+    }
     .logo{
       width: 270px;
-  }
+    }
 
     .menu {
       margin-right: 0;
       display: none;
       position: absolute;
       z-index: 5;
-      top: 6rem;
+      top: 4rem;
       right: 0;
-      width: 50%;
-      height: calc(50vh - 6rem);
+      width: auto;
+      padding: 8px;
+      height: calc(50vh - 9rem);
       background-color: rgba(255, 255, 255, 0.95);
       text-align: center;
       justify-content: center;
@@ -172,9 +176,4 @@
       flex-direction: column;
       gap: 2rem;
     }
-
-    .navBar_a{
-      color: rgb(206, 42, 52);
-    }
-
   }

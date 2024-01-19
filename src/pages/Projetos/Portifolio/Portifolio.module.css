@@ -14,13 +14,6 @@
     align-items: center;
   }
 
-  .linhaDetalhe{
-    margin: 15px 0px;
-    width: 100%;
-    height: 3.5px;
-    background-color: rgb(206, 42, 52) ;
-  }
-
   .containerTitulo h1{
     color: #1e2132;
     padding: 5px;
@@ -33,7 +26,7 @@
 .container_conteudo{
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   margin-bottom: 20px;
 }
 
@@ -61,7 +54,7 @@
   flex-direction: column;
 }
 
-.containerDescricao h3{
+.containerDescricao h2{
   color: #1e2132;
   font-weight: 700;
   font-size: 1.6rem;
@@ -69,43 +62,45 @@
   margin-bottom: 5px;
 }
 
-.containerDescricao p{
+.descricao {
+  text-align: center;
   font-size: 1.2rem;
+  line-height: 1.4;
   letter-spacing: 0px;
   font-weight: 600;
   margin-bottom: 10px;
+  color: #2c1a53;
 }
 
-.containerDescricao  h4{
-  grid-column: 4 /span 2;
-  color: rgb(4, 13, 38);
-  font-weight: 600;
-  letter-spacing: 0px;
-  text-align: center;
-  margin-top: 10px;
-}
+/*linhas detalhe*/
 
-.containerDescricao .linhaDetalhe{
+.linhaDetalhe{
+  margin: 15px 0px;
+  width: 100%;
   height: 3px;
-  width: 30%;
+  background-color: rgb(206, 42, 52) ;
+}
+.containerDescricao .linhaDetalhe{
+  margin-top: 5px;
+  margin-bottom: 25px;
+  width: 33%;
 }
 
 .linhaDetalhe2{
   height: 3px;
   margin-top: 25px;
-  width: 100%;
-  grid-row: 3;
-  grid-column: 3 / span 2;
-  align-self: end;
+  width: 33%;
+  align-self: flex-end;
+  margin-right: 10%;
 }
-
 @media (max-width: 770px){
   .containerTitulo h1{
     font-size: 1.4rem;
   }
   
-  .containerDescricao h3{
+  .containerDescricao h2{
     font-size: 1.2rem;
+    margin-left: 5%;
   }
   .containerDescricao p{
     font-size: 1rem;
@@ -113,8 +108,14 @@
   }
   
   .container_conteudo{
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    
+  }
+  .descricao{
+    text-align: justify;
+  }
+  .containerDescricao .linhaDetalhe{
+    margin-left: 5%;
   }
 
   .container_imagens{

@@ -34,16 +34,7 @@ const Historia = () => {
         </section>
         <span className={`${styles.linhaDetalhe} ${styles.linhaDetalhe2}`}></span>
 
-        <div  className={styles.divConteConosco} >
-          <p>
-            Conte conosco para lonas excepcionais e um serviço profissional que vai além da fabricação
-          </p>
-          <p>
-          Abraçando a rica herança circense que impulsiona nossa paixão pela excelência
-          </p>
-
-          <span className={`${styles.linhaDetalhe} ${styles.linhaDetalhe2}`}></span>
-        </div>
+      
     </section>
   )
 }
