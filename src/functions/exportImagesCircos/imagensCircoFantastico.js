@@ -1,5 +1,6 @@
 async function carregarImagens() {
   const context = import.meta.glob('/src/assets/images/circo_fantastico/*.jpg');
+  console.log('chamado', context)
   return context;
 }
 const image = await carregarImagens();
