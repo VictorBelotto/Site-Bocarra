@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 
-const InputTelefone = () => {
+const InputTelefone = ({onChange}) => {
   const [telefone, setTelefone] = useState('');
 
   const formatarTelefone = (input) => {
-    // Remove todos os caracteres não numéricos
     const numeros = input.replace(/\D/g, '');
-
-    // Aplica a máscara
     let formatoTelefone = '';
     if (numeros.length === 11) {
       formatoTelefone = `(${numeros.slice(0, 2)}) ${numeros.slice(2, 7)}-${numeros.slice(7)}`;
@@ -22,7 +19,9 @@ const InputTelefone = () => {
 
   const handleTelefoneChange = (e) => {
     const inputTelefone = e.target.value;
-    setTelefone(formatarTelefone(inputTelefone));
+    const telefoneFormatado = formatarTelefone(inputTelefone);
+    setTelefone(telefoneFormatado);
+    onChange(telefoneFormatado); 
   };
 
   return (
@@ -30,6 +29,7 @@ const InputTelefone = () => {
       <input
         placeholder="‎"
         type="tel"
+        id='telefone'
         value={telefone}
         onChange={handleTelefoneChange}
         required

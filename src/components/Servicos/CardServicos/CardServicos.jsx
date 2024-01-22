@@ -4,10 +4,10 @@ import styles from './CardServicos.module.css'
 const CardServicos = ({titulo, conteudo}) => {
   return (
     <div className={styles.notification}>
-      <div class={styles.notiglow}></div>
-      <div class={styles.notiborderglow}></div>
-      <div class={styles.notititle}>{titulo}</div>
-      <div class={styles.notibody}>{conteudo}</div>
+      <div className={styles.notiglow}></div>
+      <div className={styles.notiborderglow}></div>
+      <div className={styles.notititle}>{titulo}</div>
+      <div className={styles.notibody}>{conteudo}</div>
     </div>  )
 }
 

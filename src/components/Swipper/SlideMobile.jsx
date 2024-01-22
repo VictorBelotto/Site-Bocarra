@@ -13,7 +13,6 @@ const SlideMobile = ({imagens}) => {
         effect={'cards'}
         grabCursor={true}
         modules={[EffectCards]}
-        loop={true}
         >
         {imagens.map((imagem, index)=>(
           <SwiperSlide  className={styles.swiper__slide__mobile} key={index}>
