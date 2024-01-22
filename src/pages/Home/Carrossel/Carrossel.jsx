@@ -16,7 +16,7 @@ const Carrossel = () => {
       </div>
       <div className={styles.slide}>
           <img
-            src={imagens[2]}
+            src={imagens[1]}
             className={styles.imagem}
           />
       

@@ -1,15 +1,8 @@
-async function carregarImagens() {
-  const context = import.meta.glob('/src/assets/images/circo_dos_sonhos/*.jpg');
-  return context;
-}
-const image = await carregarImagens();
-const array = Object.values(image);
+const gallery = Object.values(import.meta.glob('/src/assets/images/circo_dos_sonhos/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }));
 const imagens = {
   circoDosSonhos: [],
 };
-array.forEach((img) => {
-  imagens.circoDosSonhos.push(
-   img.name
-  );
-});
+gallery.forEach((img) =>(
+  imagens.circoDosSonhos.push(img)
+))
 export default imagens;

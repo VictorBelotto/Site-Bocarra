@@ -1,18 +1,8 @@
-async function carregarImagens() {
-  const context = import.meta.glob('/src/assets/images/circo_ramito/*.jpg');
-  return context;
-}
-const image = await carregarImagens();
-const array = Object.values(image);
-
+const gallery = Object.values(import.meta.glob('/src/assets/images/circo_ramito/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }));
 const imagens = {
   circoRamito: [],
 };
-
-array.forEach((img) => {
-  imagens.circoRamito.push(
-   img.name
-  );
-});
+gallery.forEach((img) =>(
+  imagens.circoRamito.push(img)
+))
 export default imagens;
-
