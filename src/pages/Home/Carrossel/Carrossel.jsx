@@ -1,10 +1,19 @@
 import React from 'react';
 import styles from './carrossel.module.css';
-import exportImagesCarrossel from '../../../assets/images/imagens_carrossel/exportImagesCarrossel';
+import exportImagesCarrossel from './exportImagesCarrossel/';
 
 const Carrossel = () => {
   const imagens = exportImagesCarrossel;
-
+  const [index, setIndex] = React.useState(0);
+  setTimeout(
+    () => {
+      if(index < (imagens.length - 1)){
+        setIndex(index + 1)
+      } else {
+        setIndex(0)
+      }
+    }, 3500
+  );
 
   return (
     <div className={styles.container_carrossel}>
@@ -16,10 +25,9 @@ const Carrossel = () => {
       </div>
       <div className={styles.slide}>
           <img
-            src={imagens[1]}
+            src={imagens[index]}
             className={styles.imagem}
           />
-      
       </div>
     </div>
   );

@@ -147,22 +147,27 @@
     .logo{
       width: 270px;
     }
-
     .menu {
-      margin-right: 0;
-      display: none;
-      position: absolute;
+      display: flex;
+      flex-direction: column;
+      position: fixed; 
       z-index: 5;
       top: 4rem;
-      right: 0;
-      width: auto;
+      left: -105%;
+      width: 100%;
       padding: 8px;
-      height: calc(50vh - 9rem);
+      height: calc(100vh - 4rem);
       background-color: rgba(255, 255, 255, 0.95);
-      text-align: center;
-      justify-content: center;
+      transition: left 0.5s ease;
+      align-items: center;
+      gap: 40px;
     }
-    
+    .navBar_li:first-child{
+      margin-top: 50px;
+    }
+    .navBar_li a{
+      font-size: 1.6rem;
+    }
     .menuBar{
       display: block;
     }
@@ -172,8 +177,6 @@
     }
 
     .checkbox:checked ~ .menu{
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
+      left: 0;
     }
   }

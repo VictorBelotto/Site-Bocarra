@@ -3,4 +3,6 @@ const imagens = [];
 gallery.forEach((img) =>(
   imagens.push(img)
 ))
-export default imagens;
+
+export default imagens
+
