@@ -28,7 +28,7 @@ const Servicos = () => {
         <h3>Projeto Abrangente e Personalizado</h3>
         <span className={styles.linhaDetalheServico}></span>
         <p>
-          Com base nos requisitos levantados, criamos um projeto abrangente e personalizado. Nossa equipe utiliza modelagem 3D no software SketchUp para garantir precisão e inovação em cada detalhe.
+          Com base nos requisitos levantados, criamos um projeto abrangente e personalizado. Nossa equipe utiliza programas de modelagem 3D para garantir precisão e inovação em cada detalhe.
         </p>
       </section>
 

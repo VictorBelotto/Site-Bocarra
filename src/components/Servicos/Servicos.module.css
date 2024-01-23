@@ -14,8 +14,8 @@
   background-color: #1a1756;
 }
 .linhaDetalhe ~ .linhaDetalhe{
-  align-self: center;
-  width: 20%;
+  align-self: end;
+  width: 35%;
 }
 
 .bemVindo{
@@ -53,11 +53,11 @@
 }
 
 .servico p{
-  color: #575757;
+  color: #3d3d3d;
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 400;
   text-align: justify;
-
+  line-height: 1.2;
 }
 
 .containerServicos a{
@@ -80,8 +80,11 @@
 
 .linhaDetalheServico{
   width: 15%;
-  height: 3px !important;
+  height: 3px ;
   background-color: #d03438;
+  position: relative;
+  left: -4px;
+
 }
 
 @media (max-width: 770px){
@@ -90,11 +93,18 @@
     font-size: 1.4rem;
     font-weight: 700;
   }
+  .linhaDetalheServico{
+    position: relative;
+    left: -6%;
+    width: 30%;
+    margin: 10px 0px;
+  }
   .containerServicos{
     width: 90%;
   }
   .containerServicos h3{
     font-size: 1.2rem;
+    
   }
   .containerServicos a{
     font-size: 1.1rem;

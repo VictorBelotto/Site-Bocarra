@@ -12,7 +12,7 @@ const Carrossel = () => {
       } else {
         setIndex(0)
       }
-    }, 3500
+    }, 4000
   );
 
   return (

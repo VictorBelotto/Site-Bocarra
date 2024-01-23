@@ -32,6 +32,11 @@ const Header = ()=> {
               </a>
             </li>
             <li className={styles.navBar_li}>
+              <a href="/servicos" >
+              Serviços
+              </a>
+            </li>
+            <li className={styles.navBar_li}>
               <a href="/contatos" >
                 Entre em contato
               </a>
