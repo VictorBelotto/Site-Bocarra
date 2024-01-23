@@ -10,8 +10,9 @@ const Historia = () => {
         <span><img src={Logo} alt="Logo Bocarra" style={{width: '150px', padding: '5px', }} /></span>
         
         <h2>Nossa Historia</h2>
-        <p>Desde 1900</p>
+        <p>Desde 1984</p>
         <span className={styles.linhaDetalhe}></span>
+        <p>Quem somos?</p>
       </div>
 
         <section className={styles.containerHistoria}>

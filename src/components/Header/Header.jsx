@@ -28,7 +28,7 @@ const Header = ()=> {
             </li>
             <li className={styles.navBar_li}>
               <a href="/empresa" >
-                Nossa História
+              Sobre Nós
               </a>
             </li>
             <li className={styles.navBar_li}>

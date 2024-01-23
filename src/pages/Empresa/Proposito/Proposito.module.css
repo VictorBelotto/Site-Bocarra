@@ -1,0 +1,55 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+.containerProposito{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 20px;
+}
+
+.containerProposito h2{
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+.proposito{
+  display: flex;
+  flex-direction: column;
+  background-color: #2c1a53;
+  padding: 20px;
+}
+
+.proposito h3{
+  color: #d03438 ;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.proposito p{
+  color: #b2b2b2;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom:16px;
+  text-align: justify;
+  line-height: 1.2;
+}
+
+.proposito span{
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+@media (max-width: 770px){
+  .containerProposito{
+    width: 95%;
+  }
+}

@@ -147,13 +147,15 @@
     .logo{
       width: 270px;
     }
+    
+
     .menu {
       display: flex;
       flex-direction: column;
       position: fixed; 
       z-index: 5;
       top: 4rem;
-      left: -105%;
+      left: -104%;
       width: 100%;
       padding: 8px;
       height: calc(100vh - 4rem);

@@ -35,6 +35,13 @@
   letter-spacing: 0px;
 }
 
+.containerTitulo p:last-child{
+  color: #1a1756;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
 .containerHistoria{
   width: 80%;
   display: flex;

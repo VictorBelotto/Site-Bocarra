@@ -1,73 +1,68 @@
 import React from 'react'
 import styles from './Servicos.module.css'
-import CardServicos from './CardServicos/CardServicos'
-import GridCardServicos from './CardServicos/GridCardServicos/GridCardServicos'
+import { FaArrowRight } from "react-icons/fa";
 
 const Servicos = () => {
   return (
     <div className={styles.container}>
       <span className={styles.linhaDetalhe}></span>
-      <section className={styles.conteConosco}>
-        <span className={styles.linhaDetalhe}></span>
-        <p>
-          Conte conosco para lonas excepcionais e um serviço profissional que vai além da fabricação
-        </p>
-        <p>
-          Abraçando a rica herança circense que impulsiona nossa paixão pela excelência
-        </p>
-      </section >
+        <div className={styles.bemVindo}>
+          <span className={styles.linhaDetalhe}></span>
+          <h2>
+            Bem-Vindo à Bocarra Circus!
+          </h2>
+        </div >
       <span className={styles.linhaDetalhe}></span>
+      <h2>Nossos Serviços</h2>
+
+      <main className={styles.containerServicos}>
+      <section className={styles.servico}>
+        <h3>Levantamento de Requisitos</h3>
+        <span className={styles.linhaDetalheServico}></span>
+        <p>
+          Iniciamos com um levantamento detalhado, discutindo material, metragem, estrutura e todas as especificações necessárias para garantir a perfeita adequação do projeto às necessidades do cliente.
+        </p>
+      </section>
+
+      <section className={styles.servico}>
+        <h3>Projeto Abrangente e Personalizado</h3>
+        <span className={styles.linhaDetalheServico}></span>
+        <p>
+          Com base nos requisitos levantados, criamos um projeto abrangente e personalizado. Nossa equipe utiliza modelagem 3D no software SketchUp para garantir precisão e inovação em cada detalhe.
+        </p>
+      </section>
+
+      <section className={styles.servico}>
+        <h3>Compromisso com a Qualidade e Satisfação</h3>
+        <span className={styles.linhaDetalheServico}></span>
+        <p>
+          Desde o pedido inicial até as verificações pós-projeto, nosso compromisso é fornecer um serviço profissional abrangente. Buscamos continuamente o mais alto nível de qualidade para cada projeto, valorizando ao máximo nossos clientes e adaptando nossos produtos para atender às suas necessidades individuais.
+        </p>
+      </section>
+
+      <section className={styles.servico}>
+        <h3>Instalação Inicial e Verificações</h3>
+        <span className={styles.linhaDetalheServico}></span>
+        <p>
+          Realizamos a primeira instalação para garantir que tudo esteja dentro dos conformes. Nossa abordagem é proativa, visando resolver qualquer problema potencial antes mesmo de ocorrer.
+        </p>
+      </section>
+
+      <section className={styles.servico}>
+        <h3>Suporte Pós-Venda e Garantia Personalizada</h3>
+        <span className={styles.linhaDetalheServico}></span>
+        <p>
+          Garantimos suporte pós-venda personalizado, proporcionando tranquilidade e confiança aos nossos clientes. Nossa garantia é adaptada ao modelo e material utilizados, assegurando a satisfação contínua.
+        </p>
+      </section>
       
+      <a href="/contatos">ENTRE EM CONTATO CONOSCO AGORA <FaArrowRight className={styles.icon}/></a>
+      <span className={styles.linhaDetalheServico}></span>
+      </main>
      
-    <h2>Nossos Serviços</h2>
 
-     {/* 
-      <div className={styles.listaAtividades}>
-        <div className={styles.atividade}>
-          <h3>Desenvolvimento e Confecção de Estruturas em Membrana Têxtil</h3>
-          <p>
-            Realizamos o desenvolvimento e confecção de estruturas em membrana têxtil de grande, médio e pequeno porte. Utilizamos software avançado para modelagem, solda eletrônica de alta frequência, e confecção da estrutura metálica.
-          </p>
-        </div>
-
-        <div className={styles.atividade}>
-          <h3>Confecção de Tensoestruturas para Circos</h3>
-          <p>
-            Somos especialistas na confecção de tensoestruturas para circos em todo o Brasil. Nossas tensoestruturas oferecem durabilidade, resistência e design inovador.
-          </p>
-        </div>
-
-        <div className={styles.atividade}>
-          <h3>Confecção de Tendas de Todos os Modelos</h3>
-          <p>
-            Produzimos tendas de diversos modelos, incluindo piramidal, chapéu de bruxa, tenda aranha, estrela, caravela, etc., ideais para eventos de todos os tipos.
-          </p>
-        </div>
-
-        <div className={styles.atividade}>
-          <h3>Confecção de Galpões Cobertos em Lona</h3>
-          <p>
-            Realizamos a confecção de galpões cobertos em lona, proporcionando soluções versáteis para diferentes necessidades de armazenamento ou eventos.
-          </p>
-        </div>
-
-      
-        <div className={styles.atividade}>
-          <h3>Desenvolvimento de Coberturas Personalizadas</h3>
-          <p>
-            Desenvolvemos coberturas personalizadas exclusivas, adaptadas às necessidades específicas de cada cliente. Nossa equipe realiza modelagem 3D no software SketchUp para garantir precisão e inovação.
-          </p>
-        </div>
-
-      </div>
-    */}
-
-          
-      <div className={styles.container__card}>
-        <GridCardServicos/>
-      </div>
-
-  </div>  )
+    </div>  
+  )
 }
 
 export default Servicos
