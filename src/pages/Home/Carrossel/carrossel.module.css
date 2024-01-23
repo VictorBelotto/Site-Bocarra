@@ -75,10 +75,18 @@
   width: 100%;
   height: calc(100vh - 6rem);
   object-fit: cover;
-
 }
 
 @media (max-width: 770px){
+  .imagem {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .info{
     grid-column: 1 / span 4;
     top: 5%;

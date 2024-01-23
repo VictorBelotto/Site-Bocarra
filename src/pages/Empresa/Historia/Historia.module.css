@@ -65,7 +65,7 @@
   justify-content: space-evenly;
 }
 .containerTextoHistoria p{
-  color: white;
+  color: rgb(233, 233, 233);
   font-weight: 500;
   font-size: 1.2rem;
   padding: 0px 30px;
@@ -108,7 +108,7 @@
   }
 
   .containerHistoria{
-    width: 100%;
+    width: 95%;
     flex-direction: column;
   }
 
