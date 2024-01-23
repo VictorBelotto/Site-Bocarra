@@ -74,7 +74,11 @@
 .imagem {
   width: 100%;
   height: calc(100vh - 6rem);
+  aspect-ratio: 4 / 3;
   object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 770px){
