@@ -52,9 +52,20 @@
   background-color: #d03438;
   padding: 10px;
   color: #fff;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.2rem;
   border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon{
+  margin-left: 10px;
+  fill: #fff;
+  font-size: 1.8rem;
+}
+.icon:hover{
+  fill: #d03438;
 }
 
 .info a:hover{

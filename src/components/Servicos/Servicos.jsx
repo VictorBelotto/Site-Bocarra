@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './Servicos.module.css'
-import { FaArrowRight } from "react-icons/fa";
-
+import { GoArrowRight } from "react-icons/go";
 const Servicos = () => {
   return (
     <div className={styles.container}>
@@ -56,7 +55,7 @@ const Servicos = () => {
         </p>
       </section>
       
-      <a href="/contatos">ENTRE EM CONTATO CONOSCO AGORA <FaArrowRight className={styles.icon}/></a>
+      <a href="/contatos">Entre em contato conosco agora <GoArrowRight className={styles.icon}/></a>
       <span className={styles.linhaDetalheServico}></span>
       </main>
      

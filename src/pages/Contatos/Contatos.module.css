@@ -8,37 +8,63 @@
 
 .container{
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 100px;
+  align-items: center;
+  gap: 40px;
   width: 80%;
   max-width: 1000px;
 }
 
-.mapa{
+.endereco{
   display: flex;
   width: 100%;
+  height: 250px;
+  gap: 10px;
 }
-.mapa h3{
-  display: none;
+.endereco div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
 }
 
+.endereco h3{
+  color: #d03438 ;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.endereco p{
+  text-align: end;
+  color: #2c1a53;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+.mapa{
+  width: 50%;
+}
 @media (max-width: 770px){
   .container{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 90%;
   }
 
-  .mapa{
+  .endereco{
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    height: fit-content;
+  }
+  .endereco div{
+    width: 100%;
   }
 
-  .mapa h3{
-    display: block;
-    font-size: 1.4rem;
-    font-weight:500;
-    color: #2c1a53;
+  .mapa{
+    width: 100%;
   }
+ 
 }

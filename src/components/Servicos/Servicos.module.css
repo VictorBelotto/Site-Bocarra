@@ -67,15 +67,20 @@
   background-color: #d03438;
   color: #fff;
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 400;
   padding: 10px;
   text-align: center;
   align-items: center;
+}
+.containerServicos a:hover{
+  background-color: #1a1756;
+  
 }
 
 .icon{
   margin-left: 10px;
   fill: #fff;
+  font-size: 1.8rem;
 }
 
 .linhaDetalheServico{

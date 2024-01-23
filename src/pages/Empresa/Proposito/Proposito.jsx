@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Proposito.module.css' 
+import { GoArrowRight } from "react-icons/go";
 
 const Proposito = () => {
   return (
@@ -47,6 +48,7 @@ const Proposito = () => {
            &nbsp;Esses valores refletem a ênfase na tradição, qualidade, respeito, foco no cliente e crescimento sustentável, que são fundamentais para a identidade e sucesso a longo prazo da Bocarra Circus.
           </p>
         </div>
+        <a href="/contatos">Entre em contato<GoArrowRight className={styles.icon}/></a>
       </section>
     </main>
   )

@@ -24,6 +24,7 @@
   background-color: #d03438;
   padding: 8px;
   color: #ffffff;
+
 }
 
 .navBar_li:last-child a:hover, .navBar_li:last-child a:focus {
@@ -37,7 +38,7 @@
 .navBar_li a{
     font-size: 1.1rem;
     color: #1e2132;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 0px;
     cursor: pointer;
     position: relative;

@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './carrossel.module.css';
 import exportImagesCarrossel from './exportImagesCarrossel/';
+import { GoArrowRight } from "react-icons/go";
 
 const Carrossel = () => {
   const imagens = exportImagesCarrossel;
@@ -21,7 +22,7 @@ const Carrossel = () => {
         <h5>Tecnologia em tensoestruturas</h5>
         <span></span>
         <h1>Lonas de Circo</h1>
-        <a href='/projetos'>Veja mais na Galeria</a>
+        <a href='/projetos'>Veja mais na Galeria<GoArrowRight className={styles.icon}/></a>
       </div>
       <div className={styles.slide}>
           <img
