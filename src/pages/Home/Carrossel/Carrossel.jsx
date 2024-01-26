@@ -22,7 +22,7 @@ const Carrossel = () => {
         <h5>Tecnologia em tensoestruturas</h5>
         <span></span>
         <h1>Lonas de Circo</h1>
-        <a href='/projetos'>Veja mais na Galeria<GoArrowRight className={styles.icon}/></a>
+        <a href='/projetos'>Acesse a galeria</a>
       </div>
       <div className={styles.slide}>
           <img

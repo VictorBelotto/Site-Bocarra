@@ -1,0 +1,50 @@
+.mainContainer{
+  margin: 60px 0px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.mainContainer h4{
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2C1A53 ;
+  margin-bottom: 64px;
+}
+
+.logosContainer{
+  display: flex;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.logo{
+  display: flex;
+  width: 250px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo:hover{
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+.logosContainer span{
+  width: 30%;
+  height: 3px;
+  background-color: #2C1A53;
+  margin-top: 32px;
+}
+
+@media (max-width: 770px){
+  .logo img, .logo{
+    width: 200px;
+    height: 100px;
+  }
+}

@@ -22,8 +22,9 @@
 .proposito{
   display: flex;
   flex-direction: column;
-  background-color: #2c1a53;
+  background-color: #ffffff;
   padding: 20px;
+  border-radius: 10px;
 }
 
 .proposito h3{
@@ -34,7 +35,7 @@
 }
 
 .proposito p{
-  color: #cbcbcb;
+  color: #2c1a53;
   font-weight: 500;
   font-size: 1rem;
   margin-bottom:16px;
@@ -45,7 +46,7 @@
 .proposito span{
   font-size: 1.1rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #28174c;
 }
 
 .containerProposito a{

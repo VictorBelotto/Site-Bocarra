@@ -29,14 +29,15 @@
 
 .navBar_li:last-child a:hover, .navBar_li:last-child a:focus {
   color: #d03438;
-  background-color: #ffffff ;
+  background-color: #fff;
+  border: #d03438 1px solid;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 1000ms;
   transition-property: color;
 }
 
 .navBar_li a{
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     color: #1e2132;
     font-weight: 400;
     letter-spacing: 0px;
