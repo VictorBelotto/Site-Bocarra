@@ -1,5 +1,7 @@
 import React from 'react'
 import LogoBranco from '../../assets/images/bocarra_visual/L1Preto.svg'
+import Logo from '../../assets/images/bocarra_visual/rinoRetangulo.svg'
+
 import styles from './Header.module.css'
 const Header = ()=> {
   return (
@@ -36,8 +38,9 @@ const Header = ()=> {
                 Entre em contato
               </a>
             </li>
+            <img src={Logo} alt="Logo" className={styles.logoMenu} />
           </ul>
-       
+
         </nav>
     </header>
   );

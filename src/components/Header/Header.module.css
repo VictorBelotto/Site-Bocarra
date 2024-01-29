@@ -1,186 +1,218 @@
 .cabecalho{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 6rem;
-}
-
-.containerLogo{
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  height: 6rem;
+  z-index: 5;
+}
+.navBar{
+  position: relative;
+  top: 16px;
+}
+.containerLogo{
+position: relative;
+top: 16px;
+left: 32px;
+display: flex;
+align-items: center;
 }
 
 .logo{
-    width: 400px;
+  width: 300px;
 }
 
 .menu{
-  display: flex;
-  gap: 32px;
-  margin-right: 16px;
+display: flex;
+gap: 24px;
+margin-right: 16px;
 }
 
-.navBar_li:last-child a{
-  background-color: #d03438;
-  padding: 8px;
-  color: #ffffff;
-
+.navBar_li:last-of-type a{
+background-color: #d03438;
+padding: 8px;
+color: #ffffff;
 }
 
-.navBar_li:last-child a:hover, .navBar_li:last-child a:focus {
-  color: #d03438;
-  background-color: #fff;
-  border: #d03438 1px solid;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 1000ms;
-  transition-property: color;
+.navBar_li:last-of-type a:hover, .navBar_li:last-of-type a:focus {
+color: #d03438;
+background-color: #fff;
+border: #d03438 1px solid;
+transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+transition-duration: 1000ms;
+transition-property: color;
 }
 
 .navBar_li a{
-    font-size: 1.4rem;
-    color: #1e2132;
-    font-weight: 400;
-    letter-spacing: 0px;
-    cursor: pointer;
-    position: relative;
-    border: none;
-    text-decoration: none;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: color;
-  }
-  
-
-  .menu a:focus,
-  .menu a:hover {
-    color: #d03438;
-  }
-  .menu a:focus:after,
-  .menu a:hover:after {
-    width: 100%;
-    left: 0%;
-  }
-  
-  .menu a:after {
-    content: "";
-    pointer-events: none;
-    bottom: -2px;
-    left: 50%;
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: rgb(206, 42, 52);
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: width, left;
-  }
+  font-size: 1.4rem;
+  color: #000000;
+  font-weight: 500;
+  letter-spacing: 0px;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  text-decoration: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
 
 
-  /* menu bar*/ 
+.menu a:focus,
+.menu a:hover {
+  color: #d03438;
+}
+.menu a:focus:after,
+.menu a:hover:after {
+  width: 100%;
+  left: 0%;
+}
 
-  .toggle {
-    position: relative;
-    width: 40px;
-    cursor: pointer;
-    margin: 0 8px;
-    display: block;
-    height: calc(4px * 3 + 11px * 2);
+.menu a:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #d03438;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+
+/* menu bar*/ 
+
+.toggle {
+  position: relative;
+  width: 40px;
+  cursor: pointer;
+  margin: 0 8px;
+  display: block;
+  height: calc(4px * 3 + 11px * 2);
+}
+
+.bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  z-index: 6;
+  border-radius: calc(4px / 2);
+  background: #000000;
+  color: inherit;
+  opacity: 1;
+  transition: none 0.35s cubic-bezier(.5,-0.35,.35,1.5) 0s;
+}
+
+/***** Spin Animation *****/
+
+.bar-top {
+  bottom: calc(50% + 11px + 4px/ 2);
+  transition-property: bottom,transform;
+  transition-delay: calc(0s + 0.35s),0s;
+}
+
+.bar-middle {
+  top: calc(50% - 4px/ 2);
+  transition-property: opacity;
+  transition-delay: calc(0s + 0.35s);
+}
+
+.bar-bottom {
+  top: calc(50% + 11px + 4px/ 2);
+  transition-property: top,transform;
+  transition-delay: calc(0s + 0.35s),0s;
+}
+
+
+.checkbox:checked + .toggle .bar-top {
+  bottom: calc(50% - 4px/ 2);
+  transform: rotate(135deg);
+  transition-delay: 0s,calc(0s + 0.35s);
+}
+
+.checkbox:checked + .toggle .bar-middle {
+  opacity: 0;
+  transition-duration: 0s;
+  transition-delay: calc(0s + 0.35s);
+}
+
+.checkbox:checked + .toggle .bar-bottom {
+  top: calc(50% - 4px/ 2);
+  transform: rotate(225deg);
+  transition-delay: 0s,calc(0s + 0.35s);
+}
+
+.checkbox, .toggle{
+  display: none;
+}
+
+.logoMenu{
+  display: none;
+}
+
+@media (max-width: 770px){
+  .cabecalho{
+    height: 4rem;
   }
-  
-  .bar {
-    position: absolute;
+  .logo{
+    left: 0px;
+    width: 270px;
+  }
+  .containerLogo{
+    top: 0;
     left: 0;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed; 
+    z-index: 5;
+    top: 0;
+    left: -110%;
+    width: 100%;
+    padding: 8px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.95);
+    transition: left 0.5s ease;
+    align-items: center;
+    gap: 40px;
+  }
+  .navBar_li:first-child{
+    margin-top: 150px;
+  }
+  .navBar_li a{
+    font-size: 2rem;
+  }
+  .menuBar{
+    display: block;
+  }
+  .navBar{
+    top: 8px;
+  }
+ .toggle{
+    display: block;
+    z-index: 6;
+  }
+
+  .checkbox:checked ~ .menu{
+    left: 0;
+    background-color: #d03439f8;
+    gap: 40px;
+  }
+  .checkbox:checked ~ .toggle{
     right: 0;
-    height: 4px;
-    border-radius: calc(4px / 2);
-    background: #d03438;
-    color: inherit;
-    opacity: 1;
-    transition: none 0.35s cubic-bezier(.5,-0.35,.35,1.5) 0s;
+    position: fixed;
   }
   
-  /***** Spin Animation *****/
-  
-  .bar-top {
-    bottom: calc(50% + 11px + 4px/ 2);
-    transition-property: bottom,transform;
-    transition-delay: calc(0s + 0.35s),0s;
+ .logoMenu{
+    display: block;
+    width: 270px;
+    margin-top: 16px;
+    opacity: 0.1 ;
   }
-  
-  .bar-middle {
-    top: calc(50% - 4px/ 2);
-    transition-property: opacity;
-    transition-delay: calc(0s + 0.35s);
-  }
-  
-  .bar-bottom {
-    top: calc(50% + 11px + 4px/ 2);
-    transition-property: top,transform;
-    transition-delay: calc(0s + 0.35s),0s;
-  }
-  
-
-  .checkbox:checked + .toggle .bar-top {
-    bottom: calc(50% - 4px/ 2);
-    transform: rotate(135deg);
-    transition-delay: 0s,calc(0s + 0.35s);
-  }
-  
-  .checkbox:checked + .toggle .bar-middle {
-    opacity: 0;
-    transition-duration: 0s;
-    transition-delay: calc(0s + 0.35s);
-  }
-  
-  .checkbox:checked + .toggle .bar-bottom {
-    top: calc(50% - 4px/ 2);
-    transform: rotate(225deg);
-    transition-delay: 0s,calc(0s + 0.35s);
-  }
-
-  .checkbox, .toggle{
-    display: none;
-  }
-
-  @media (max-width: 770px){
-    .cabecalho{
-      height: 4rem;
-    }
-    .logo{
-      width: 270px;
-    }
-    
-
-    .menu {
-      display: flex;
-      flex-direction: column;
-      position: fixed; 
-      z-index: 5;
-      top: 4rem;
-      left: -110%;
-      width: 100%;
-      padding: 8px;
-      height: calc(100vh - 4rem);
-      background-color: rgba(255, 255, 255, 0.95);
-      transition: left 0.5s ease;
-      align-items: center;
-      gap: 40px;
-    }
-    .navBar_li:first-child{
-      margin-top: 50px;
-    }
-    .navBar_li a{
-      font-size: 1.6rem;
-    }
-    .menuBar{
-      display: block;
-    }
-
-   .toggle{
-      display: block;
-    }
-
-    .checkbox:checked ~ .menu{
-      left: 0;
-    }
-  }
+}

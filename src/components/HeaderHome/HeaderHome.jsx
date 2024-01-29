@@ -1,6 +1,6 @@
 import React from 'react'
 import LogoBranco from '../../assets/images/bocarra_visual/logoBranca.svg'
-import LogoPreta from '../../assets/images/bocarra_visual/rinoRetangulo.svg'
+import Logo from '../../assets/images/bocarra_visual/rinoRetangulo.svg'
 import styles from './HeaderHome.module.css'
 const HeaderHome = ()=> {
   return (
@@ -37,7 +37,7 @@ const HeaderHome = ()=> {
                 Entre em contato
               </a>
             </li>
-            <img src={LogoPreta} alt="Logo" className={styles.logoMenu} />
+            <img src={Logo} alt="Logo" className={styles.logoMenu} />
           </ul>
           
         </nav>
