@@ -1,6 +1,6 @@
 import React from 'react'
 import LogoBranco from '../../assets/images/bocarra_visual/logoBranca.svg'
-import LogoPreta from '../../assets/images/bocarra_visual/L1Preto.svg'
+import LogoPreta from '../../assets/images/bocarra_visual/rinoRetangulo.svg'
 import styles from './HeaderHome.module.css'
 const HeaderHome = ()=> {
   return (

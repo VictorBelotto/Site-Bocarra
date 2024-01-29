@@ -102,6 +102,7 @@ transition-property: color;
   left: 0;
   right: 0;
   height: 4px;
+  z-index: 6;
   border-radius: calc(4px / 2);
   background: #ffffff;
   color: inherit;
@@ -184,14 +185,11 @@ transition-property: color;
     align-items: center;
     gap: 40px;
   }
-  
-
   .navBar_li:first-child{
     margin-top: 150px;
   }
   .navBar_li a{
-    font-size: 1.6rem;
-    color: #d03438;
+    font-size: 2rem;
   }
   .menuBar{
     display: block;
@@ -206,11 +204,19 @@ transition-property: color;
 
   .checkbox:checked ~ .menu{
     left: 0;
+    background-color: #d03439f8;
+    gap: 40px;
   }
+  .checkbox:checked ~ .toggle{
+    right: 0;
+    position: fixed;
+  }
+  
 
  .logoMenu{
     display: block;
     width: 270px;
     margin-top: 16px;
+    opacity: 0.1 ;
   }
 }
