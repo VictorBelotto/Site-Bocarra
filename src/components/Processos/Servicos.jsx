@@ -37,7 +37,7 @@ const Servicos = () => {
           </main>
          
         </section>
-        <a href="/contatos">Solicite um orçamento</a>
+        <a href="/contatos">Entre em contato</a>
         <span></span>
       </section>
 

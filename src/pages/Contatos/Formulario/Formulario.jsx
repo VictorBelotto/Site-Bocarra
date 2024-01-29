@@ -49,20 +49,18 @@ const Formulario = () => {
 
   return (
     <>
-      <div className={styles.mainContainer}>
         <div className={styles.card}>
-          <span className={styles.title}>Formulário de contato</span>
+          <span className={styles.title}>Preencha os campos</span>
           <form className={styles.form} onSubmit={handleSubmit}>
 
             <div className={styles.group}>
               <input
-                placeholder="‎"
+                placeholder="Nome"
                 type="text"
                 value={nome}
                 onChange={handleNomeChange}
                 required
               />
-              <label htmlFor="name">Nome</label>
             </div>
 
             <div className={styles.group}>
@@ -73,7 +71,7 @@ const Formulario = () => {
 
             <div className={styles.group}>
               <input
-                placeholder="‎"
+                placeholder="Email"
                 type="email"
                 id="email"
                 name="email"
@@ -81,12 +79,11 @@ const Formulario = () => {
                 onChange={handleEmailChange}
                 required
               />
-              <label htmlFor="email">E-mail</label>
             </div>
 
             <div className={styles.group}>
               <textarea
-                placeholder="‎"
+                placeholder="Mensagem"
                 id="message"
                 name="message"
                 rows="5"
@@ -94,12 +91,10 @@ const Formulario = () => {
                 onChange={handleMensagemChange}
                 required
               />
-              <label htmlFor="message">Mensagem</label>
             </div>
             <button type="submit">Enviar</button>
           </form>
         </div>
-      </div>
     </>
   );
 };

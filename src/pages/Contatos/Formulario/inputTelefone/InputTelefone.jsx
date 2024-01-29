@@ -27,14 +27,13 @@ const InputTelefone = ({onChange}) => {
   return (
     <>
       <input
-        placeholder="‎"
+        placeholder="Telefone com ddd"
         type="tel"
         id='telefone'
         value={telefone}
         onChange={handleTelefoneChange}
         required
       />
-      <label htmlFor="telefone">(DDD)-Telefone</label>
     </>
   );
 };
