@@ -177,7 +177,7 @@ transition-property: color;
     width: 100%;
     padding: 8px;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: #d03439f8;
     transition: left 0.5s ease;
     align-items: center;
     gap: 40px;
@@ -186,6 +186,7 @@ transition-property: color;
     margin-top: 150px;
   }
   .navBar_li a{
+    color: #fff;
     font-size: 2rem;
   }
   .menuBar{
@@ -201,7 +202,6 @@ transition-property: color;
 
   .checkbox:checked ~ .menu{
     left: 0;
-    background-color: #d03439f8;
     gap: 40px;
   }
   .checkbox:checked ~ .toggle{

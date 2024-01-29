@@ -180,7 +180,7 @@ transition-property: color;
     width: 100%;
     padding: 8px;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: #d03439f8;
     transition: left 0.5s ease;
     align-items: center;
     gap: 40px;
