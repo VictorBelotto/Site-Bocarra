@@ -1,13 +1,13 @@
 .cabecalho{
   position: absolute;
   left: 0;
-  top: 0;
+  top: 0px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 6rem;
-  z-index: 1;
+  z-index: 5;
 }
 .navBar{
   position: relative;
@@ -31,14 +31,13 @@ gap: 32px;
 margin-right: 16px;
 }
 
-.navBar_li:last-child a{
+.navBar_li:last-of-type a{
 background-color: #d03438;
 padding: 8px;
 color: #ffffff;
-
 }
 
-.navBar_li:last-child a:hover, .navBar_li:last-child a:focus {
+.navBar_li:last-of-type a:hover, .navBar_li:last-of-type a:focus {
 color: #d03438;
 background-color: #fff;
 border: #d03438 1px solid;
@@ -153,45 +152,65 @@ transition-property: color;
   display: none;
 }
 
+.logoMenu{
+  display: none;
+}
+
 @media (max-width: 770px){
   .cabecalho{
     height: 4rem;
   }
   .logo{
+    left: 0px;
     width: 270px;
   }
-  
+  .containerLogo{
+    top: 0;
+    left: 0;
+  }
 
   .menu {
     display: flex;
     flex-direction: column;
     position: fixed; 
     z-index: 5;
-    top: 4rem;
+    top: 0;
     left: -110%;
     width: 100%;
     padding: 8px;
-    height: calc(100vh - 4rem);
+    height: 100vh;
     background-color: rgba(255, 255, 255, 0.95);
     transition: left 0.5s ease;
     align-items: center;
     gap: 40px;
   }
+  
+
   .navBar_li:first-child{
-    margin-top: 50px;
+    margin-top: 150px;
   }
   .navBar_li a{
     font-size: 1.6rem;
+    color: #d03438;
   }
   .menuBar{
     display: block;
   }
-
+  .navBar{
+    top: 8px;
+  }
  .toggle{
     display: block;
+    z-index: 6;
   }
 
   .checkbox:checked ~ .menu{
     left: 0;
+  }
+
+ .logoMenu{
+    display: block;
+    width: 270px;
+    margin-top: 16px;
   }
 }

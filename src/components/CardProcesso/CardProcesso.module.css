@@ -9,6 +9,12 @@
   border-radius: 8px;
   margin-top: 32px;
 }
+
+.container:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
 .containerImg{
   display: flex;
   justify-content: center;
@@ -18,7 +24,6 @@
 
 .containerImg img{
   border-radius: 8px;
-
   margin-top: 16px;
   width: 350px;
   object-fit: cover;
@@ -39,4 +44,23 @@
 .containerDescricao p{
   color: #000000;
   font-size: 1.1rem;
+}
+
+
+
+@media (max-width: 770px){
+  .container{
+    width: 350px;
+    margin-top: 16px;
+
+  }
+
+  .containerImg img {
+    width: 330px;
+  }
+
+  .containerDescricao{
+    width: 330px
+  }
+
 }

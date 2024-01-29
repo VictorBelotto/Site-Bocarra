@@ -14,7 +14,7 @@ const Servicos = () => {
       <span className={styles.linhaDetalhe}></span>
   
       <section className={styles.mainContainer}>
-      <h2>Nossos Processo</h2>
+      <h2>Nosso Processo</h2>
         <section>
           <main className={styles.containerCardProcesso}>
             <CardProcesso

@@ -7,7 +7,7 @@ const logos = gallery.map((img) => img);
 const Parceiros = () => {
   return (
     <section className={styles.mainContainer}>
-      <h4>Parceiros</h4>
+      <h4>Clientes</h4>
       <main className={styles.logosContainer}>
         {logos.map((logo) =>(
           <div key={logo} className={styles.logo}>
