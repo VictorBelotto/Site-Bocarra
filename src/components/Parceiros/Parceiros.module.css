@@ -15,15 +15,7 @@
 
 
 
-.logo{
-  display: flex;
-  width: 250px;
-  height: 150px;
-  justify-content: center;
-  align-items: center;
-  background-color: #FAFAFA;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
+
 
 .logo:hover{
   transform: scale(1.05);
@@ -34,15 +26,15 @@
 
 .swiper {
   display: flex !important;
-  max-width: 1200px;
-  width: 50%;
+  max-width: 1100px;
+  width: 100%;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
 }
 
 .swiper_slide {
-  margin: 0px 0px 10px 0px!important;
+  margin: 0px 32px 25px 0px!important;
   display: flex !important;
   width: 250px !important;
   height: 150px !important;
@@ -55,12 +47,12 @@
 
 
 @media (max-width: 770px){
-  .logo img, .logo{
-    width: 180px;
-    height: 100px;
+  .logo, .swiper_slide {
+    width: 180px !important;
+    height: 100px !important;
+    margin-right: 8px !important;
   }
-
   .swiper{
-    width: 360px;
+    max-width: 340px !important;
   }
 }

@@ -1,10 +1,8 @@
 import React from 'react'
 import styles from './Parceiros.module.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
-
+import { Pagination } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
 
@@ -16,25 +14,36 @@ const Parceiros = () => {
     <section className={styles.mainContainer}>
       <h4>Alguns de nossos clientes</h4>
       <Swiper
-      className={`"mySwiper"  ${styles.swiper}` }
-      effect={'coverflow'}
-      grabCursor={true}
-      centeredSlides={true}
-      slidesPerView={'auto'}
-      coverflowEffect={{
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      }}
       loop={true}
-      pagination={true}
-      modules={[EffectCoverflow, Pagination]}
+      className={`"mySwiper"  ${styles.swiper}` }
+      slidesPerView={1}
+        spaceBetween={20}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        breakpoints={{
+          '@0.00': {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          '@0.75': {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          '@1.00': {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          '@1.50': {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        }}
         >
         {logos.map((logo) =>(
           <SwiperSlide key={logo} className={styles.swiper_slide} >
-            <img src={logo} alt={`Logo ${logo}`} />
+            <img src={logo} className={styles.logo} alt={`Logo ${logo}`} />
           </SwiperSlide>
         ))}
       </Swiper>      
