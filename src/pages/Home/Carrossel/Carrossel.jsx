@@ -14,7 +14,9 @@ const Carrossel = () => {
     progressCircle.current.style.setProperty('--progress', 1 - progress);
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };;
-
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  
   return (
     <div className={styles.container_carrossel}>
       <div className={styles.info}>
