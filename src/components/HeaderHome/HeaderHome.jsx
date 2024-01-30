@@ -23,7 +23,7 @@ const HeaderHome = ()=> {
               </a>
             </li>
             <li className={styles.navBar_li}>
-              <a href="/projetos" >
+              <a href="/galeria" >
                 Galeria
               </a>
             </li>
