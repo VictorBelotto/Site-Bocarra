@@ -75,6 +75,9 @@
   .card{
     align-items: center;
   }
+  .card:last-of-type{
+    flex-direction: column-reverse;
+  }
   .cardMesage{
     width: 350px;
   }
