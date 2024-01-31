@@ -135,21 +135,21 @@
     box-shadow: none;
   }
   .imagem{
+   margin-top: 16px;
    width: 98%;
    height: auto;
   }
   .containerImagem{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     width: 98%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 16px 0px;
   }
   .containerImagem p{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   
   .containerTextoHistoria{
