@@ -10,36 +10,41 @@ const gallery = Object.values(import.meta.glob('/src/assets/images/logos_circos_
 const logos = gallery.map((img) => img);
 
 const Parceiros = () => {
+  const [larguraTela, setLarguraTela] = React.useState(5);
+
+  const atualizarLarguraTela = () => {
+    window.innerWidth < 500 ? setLarguraTela(2) : setLarguraTela(5);
+    console.log( 'att')
+  };
+
+  React.useEffect(() => {
+    atualizarLarguraTela();
+
+    const handleResize = () => {
+      atualizarLarguraTela();
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+
+
   return (
     <section className={styles.mainContainer}>
       <h4>Alguns de nossos clientes</h4>
       <Swiper
-      loop={true}
       className={`"mySwiper"  ${styles.swiper}` }
-      slidesPerView={1}
-        spaceBetween={20}
+        slidesPerView={larguraTela}
+        spaceBetween={0}
+        centeredSlides={false}
         pagination={{
           clickable: true,
         }}
         modules={[Pagination]}
-        breakpoints={{
-          '@0.00': {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
-          '@0.75': {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          '@1.00': {
-            slidesPerView: 3,
-            spaceBetween: 40,
-          },
-          '@1.50': {
-            slidesPerView: 4,
-            spaceBetween: 50,
-          },
-        }}
+       
+        loop={true}
         >
         {logos.map((logo) =>(
           <SwiperSlide key={logo} className={styles.swiper_slide} >
