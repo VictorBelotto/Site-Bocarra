@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .containerTitulo{
@@ -43,9 +44,14 @@
 }
 
 .containerHistoria{
-  width: 80%;
   display: flex;
+  width: 1100px;
+  background-color: #FAFAFA;
   flex-direction: row;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  border-radius: 10px;
+  justify-content: space-between;
 }
 
 .containerImagem{
@@ -53,26 +59,40 @@
 }
 
 .imagem{
-  width: 100%;
+  width: 600px;
+  height: 340px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+.containerImagem p{
+  color: #e55050;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .containerTextoHistoria{
-  width: 50%;
-  background-color: rgb(26, 23, 86); 
+  width: 432px;
+  height: 366px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
+.containerTextoHistoria h2{
+  width: 400px;
+  color: #e55050;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
 .containerTextoHistoria p{
-  color: rgb(233, 233, 233);
+  color: #373435;
   font-weight: 500;
   font-size: 1.2rem;
-  padding: 0px 30px;
   line-height: 1.3;
   text-align: justify;
   text-justify: inter-word;
   letter-spacing: 0px;
+  width: 400PX;
 }
 
 .linhaDetalhe2{
@@ -108,20 +128,44 @@
   }
 
   .containerHistoria{
-    width: 95%;
+    width: 98%;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
   }
-
+  .imagem{
+   width: 98%;
+   height: auto;
+  }
   .containerImagem{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 16px 0px;
   }
+  .containerImagem p{
+    font-size: 1.1rem;
+  }
+  
   .containerTextoHistoria{
-    width: 100%;
-    padding: 20px 0px;
+    margin-top: 16px;
+    width: 98%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 300px;
+  }
+  .containerTextoHistoria h2{
+    width: 95%;
   }
   .containerTextoHistoria p{
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
+    width: 95%;
   }
 
   .divConteConosco p{

@@ -9,27 +9,21 @@ const Historia = () => {
       <div className={styles.containerTitulo}>
         <span><img src={Logo} alt="Logo Bocarra" style={{width: '150px', padding: '5px', }} /></span>
         
-        <h2>Nossa Historia</h2>
-        <p>Desde 1984</p>
+        <h2>Sobre nós</h2>
         <span className={styles.linhaDetalhe}></span>
-        <p>Quem somos?</p>
       </div>
 
         <section className={styles.containerHistoria}>
 
           <div className={styles.containerImagem}>
             <img src={CircoChrysostenes} className={styles.imagem} alt="Imagem Circo Chrysostenes" />
+            <p>Circo Chrysostenes 1984</p>
           </div>
           
           <div className={styles.containerTextoHistoria}>
+            <h2>Origem Circense</h2>
              <p>
-               &nbsp;Com três décadas de experiência, a Bocarra Circus é uma líder na fabricação de lonas para circo no Brasil.   
-             </p>
-             <p>
-              &nbsp;Originária de uma respeitável linhagem circense, nossa empresa tem suas raízes em uma tradição familiar passada de geração em geração.
-             </p>
-             <p>
-              &nbsp;Hoje, nos destacamos por nossa especialização na fabricação de lonas de alta qualidade, combinando a tradição circense com inovação e precisão.
+             Com raízes profundas na tradição circense, a Bocarra Circus carrega consigo uma história que atravessa gerações. Originária de uma linhagem respeitável, nossa jornada começou há décadas, moldando nossa identidade com tradição, paixão e autenticidade.  
              </p>
           </div>
         </section>
