@@ -1,6 +1,6 @@
 .container{
   width: 380px;
-  height: 480px;
+  height: 500px;
   background-color: #FAFAFA;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   display: flex;
@@ -42,8 +42,9 @@
   margin-bottom: 16px;
 }
 .containerDescricao p{
-  color: #000000;
+  color: #373435;
   font-size: 1.1rem;
+  line-height: 1.4;
 }
 
 

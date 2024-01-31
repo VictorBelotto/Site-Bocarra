@@ -4,16 +4,16 @@
   width: 100%;
   align-items: center;
   margin-bottom: 20px;
-
+  justify-content: center;
+  justify-items: center;
 }
 
 .containerProposito{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   max-width: 1100px;
   gap: 25px;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .containerProposito h2{
@@ -28,14 +28,14 @@
   background-color: #fafafa;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  width: 350px;
-  height: 450px;
+  width: 100%;
+  padding: 16px 0px;
   justify-content: space-evenly;
   align-items: center;
 }
 
 .proposito h3{
-  width: 300px;
+  width: 95%;
   color: #d03438 ;
   font-weight: 700;
   font-size: 1.4rem;
@@ -48,8 +48,8 @@
   font-size: 1rem;
   margin-bottom:16px;
   text-align: justify;
-  line-height: 1.2;
-  width: 300px;
+  line-height: 1.4;
+  width: 95%;
 }
 
 .proposito span{
@@ -87,5 +87,8 @@
 @media (max-width: 770px){
   .containerProposito{
     width: 95%;
+  }
+  .containerProposito p, .containerProposito h3{
+    width: 90%;
   }
 }

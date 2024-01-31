@@ -39,7 +39,7 @@
 
 .cardMesage{
   width: 432px;
-  height: 250px;
+  height: 300px;
   border-radius: 10px;
   background-color: #fafafa;
   display: flex;
@@ -58,12 +58,16 @@
   color: #373435;
   font-weight: 400;
   width: 400px;
+  line-height: 1.4;
 }
 
 .cardImage{
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+.cardImage img:last-child{
+  rotate: 180deg;
 }
 .cardImage h2{
   color: #D03438;
