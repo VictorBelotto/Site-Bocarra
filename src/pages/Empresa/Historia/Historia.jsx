@@ -9,7 +9,7 @@ const Historia = () => {
       <div className={styles.containerTitulo}>
         <span><img src={Logo} alt="Logo Bocarra" style={{width: '150px', padding: '5px', }} /></span>
         
-        <h2>Sobre nós</h2>
+        <h1>Sobre nós</h1>
         <span className={styles.linhaDetalhe}></span>
       </div>
 
@@ -17,7 +17,7 @@ const Historia = () => {
 
           <div className={styles.containerImagem}>
             <img src={CircoChrysostenes} className={styles.imagem} alt="Imagem Circo Chrysostenes" />
-            <p>Circo Chrysostenes 1984</p>
+            <h2>Circo Chrysostenes 1984</h2>
           </div>
           
           <div className={styles.containerTextoHistoria}>

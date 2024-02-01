@@ -1,12 +1,12 @@
 .mainContainer{
-  margin: 60px 0px;
+  margin: 72px 0px;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.mainContainer h4{
+.mainContainer h1{
   font-size: 1.6rem;
   font-weight: 700;
   color: #2C1A53 ;
@@ -14,14 +14,10 @@
 }
 
 
-
-
-
 .logo:hover{
   transform: scale(1.05);
   cursor: pointer;
 }
-
 
 
 .swiper {
@@ -54,5 +50,8 @@
   }
   .swiper{
     width: 100vw !important;
+  }
+  .mainContainer h1{
+    font-size: 1.4rem;
   }
 }

@@ -1,6 +1,14 @@
 .main{
   display: flex;
   flex-direction: column;
+  margin-top: 64px;
+}
+.main h1{
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #D03438;
+  align-self: center;
+  margin-bottom: 32px;
 }
 .span{
   display: flex;
@@ -21,6 +29,7 @@
   gap: 32px;
 }
 
+
 .card{
   width: 432px;
   margin: 20px;
@@ -38,8 +47,8 @@
 }
 
 .cardMesage{
-  width: 432px;
-  height: 300px;
+  width: 444px;
+  height: 332px;
   border-radius: 10px;
   background-color: #fafafa;
   display: flex;
@@ -58,6 +67,7 @@
   color: #373435;
   font-weight: 400;
   width: 400px;
+  font-size: 1.2rem;
   line-height: 1.4;
 }
 
@@ -87,12 +97,17 @@
   }
   .cardMesage p{
     width: 330px;
+    font-size: 1rem;
   }
   .cardMesage h2{
+    font-size: 1.2rem;
     width: 330px;
   }
   .cardImage img{
     width: 350px;
     height: 238px;
+  }
+  .main h1{
+    font-size: 1.4rem;
   }
 }
