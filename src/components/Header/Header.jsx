@@ -1,11 +1,45 @@
 import React from 'react'
 import LogoBranco from '../../assets/images/bocarra_visual/L1Preto.svg'
 import Logo from '../../assets/images/bocarra_visual/rinoRetangulo.svg'
-
 import styles from './Header.module.css'
+
 const Header = ()=> {
+  const [scrollPos, setScrollPos] = React.useState(0);
+  const cabecalhoFixed = `${styles.cabecalho_fixed } ${styles.cabecalho }`
+  const cabecalhoNormal =  styles.cabecalho 
+  const cabecalhoOculto = `${styles.cabecalho_oculto } ${styles.cabecalho }`
+  const [cabecalho, setCabecalho] = React.useState(cabecalhoNormal)
+
+  React.useEffect(() => {
+    let prevScrollPos = window.pageYOffset;
+
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      setScrollPos(currentScrollPos);
+      if(currentScrollPos < 1){
+        setCabecalho(cabecalhoNormal)
+      }
+      else if(currentScrollPos > prevScrollPos) {
+        // Rolando para baixo
+        setCabecalho(cabecalhoOculto)
+      } else {
+        // Rolando para cima
+        setCabecalho(cabecalhoFixed)
+      }
+
+      prevScrollPos = currentScrollPos;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrollPos]);
+
+
   return (
-    <header className={styles.cabecalho}>
+    <header   className={cabecalho} >
       <a href='/' className={styles.containerLogo}>
         <img src={LogoBranco} alt="Logo" className={styles.logo} />
       </a>

@@ -29,7 +29,6 @@ const Slide = ({imagens}) => {
         ))}
       </Swiper>
     </>
-    
   )
 }
 

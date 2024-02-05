@@ -5,7 +5,23 @@
   justify-content: space-between;
   height: 6rem;
   z-index: 5;
+  background-color: #fff;
+  transition: top 1s ease;
+  position: relative;
+  top: 0;
 }
+
+.cabecalho_oculto{
+  position: fixed;
+  top: -10rem;
+  transition: top 1s ease;
+}
+
+.cabecalho_fixed{
+  position: fixed;
+  top: 0;
+}
+
 .navBar{
   position: relative;
   top: 16px;
