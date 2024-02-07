@@ -105,14 +105,14 @@
   .containerTitulo h1{
     font-size: 1.4rem;
   }
- 
+  
   .containerHistoria{
     width: 98%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: none;
-    background-color: #fff;
+    background-color: #fafafa;
   }
   .imagem{
    margin-top: 16px;
