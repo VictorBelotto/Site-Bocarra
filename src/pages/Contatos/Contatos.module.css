@@ -15,16 +15,15 @@
   gap: 40px;
   max-width: 1000px;
   height: 420px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 24px 48px;
 }
-.contatos h3{
+.contatos h1{
   position: relative;
   left: -300px;
-  font-size: 3rem ;
+  font-size: 3rem !important;
   font-weight: 600;
   margin-bottom: 32px;
-  color: #D03438;
 }
 .endereco{
   position: relative;
@@ -32,7 +31,7 @@
   width: 400px;
   height: 520px;
   background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   z-index: 2;
   margin-left: 48px;
@@ -51,16 +50,17 @@
   margin-left: 16px;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #696969;
+  color: #d03438;
 }
 
 .endereco a{
   margin-left: 16px;
   font-size: 1.1rem;
   width: 320px;
-  font-weight: 700;
-  color: #393939;
+  font-weight: 500;
+  color: #2c1a53;
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
 }
 
 .endereco a:hover {
@@ -78,7 +78,8 @@
   .container{
     flex-direction: column;
     height: auto;
-    width: auto;
+    width: 95%;
+    max-width: 500px;
     align-items: center;
     padding: 8px 16px;
     box-shadow:none;
@@ -87,14 +88,18 @@
   .endereco{
     margin: 0;
     top: 0;
-    width: 350px;
+    width: 100%;
+    align-items: center;
   }
   .endereco p{
     width: 320px;
   }
-  .contatos h3{
+  .endereco h5{
+    width: 320px;
+  }
+  .contatos h1{
     left: 0;
-    font-size: 2.5rem;
+    font-size: 2rem !important;
     margin-bottom: 16px;
   }
 }

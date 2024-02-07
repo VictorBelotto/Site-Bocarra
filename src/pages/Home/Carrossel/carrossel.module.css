@@ -15,7 +15,7 @@
   flex-direction: column;
 }
 
-.info h5{
+.info p{
   width: fit-content;
   color: white;
   margin-bottom: 8px;
@@ -33,7 +33,7 @@
 
 .info h1{
   width: fit-content;
-  color: white;
+  color: #fff !important;
   font-size: 1.8rem;
   font-weight: 600;
   position: relative;
@@ -44,15 +44,16 @@
 }
 
 .info a{
+  font-family: "Poppins", sans-serif;
   width: fit-content;
   margin-top: 16px;
   text-decoration: none;
   letter-spacing: 0px;
   background-color: #d03438;
-  padding: 8px;
+  padding: 8px 16px;
   color: #fff;
-  font-weight: 400;
-  font-size: 1.2rem;
+  font-weight: 500;
+  font-size: 1.4rem;
   border-radius: 2px;
   display: flex;
   justify-content: center;

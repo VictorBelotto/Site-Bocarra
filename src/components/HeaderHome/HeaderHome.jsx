@@ -67,7 +67,7 @@ const HeaderHome = ()=> {
             </li>
             <li className={styles.navBar_li}>
               <a href="/contatos" >
-                Entre em contato
+                Contato
               </a>
             </li>
             <img src={Logo} alt="Logo" className={styles.logoMenu} />

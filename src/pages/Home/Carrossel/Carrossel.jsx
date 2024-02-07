@@ -20,7 +20,7 @@ const Carrossel = () => {
   return (
     <div className={styles.container_carrossel}>
       <div className={styles.info}>
-        <h5>Tecnologia em tensoestruturas</h5>
+        <p>Tecnologia em tensoestruturas</p>
         <span></span>
         <h1>Lonas de Circo</h1>
         <a href='/projetos'>Acesse a galeria</a>

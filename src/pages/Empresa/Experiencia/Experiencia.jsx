@@ -17,8 +17,9 @@ const Experiencia = () => {
           </div>
           <span></span>
             <div className={styles.cardImage}>
-              <h2>Foto real da lona</h2>
+              
               <img src={lonaReal} alt={lonaReal} />
+              <h2>Imagem real</h2>
             </div>
           </div>
         <div className={styles.card}>
@@ -30,8 +31,9 @@ const Experiencia = () => {
           </div>
           <span></span>
           <div className={styles.cardImage}>
-            <h2>Foto do programa 3D</h2>
+            
             <img src={lona3D} alt={lona3D} />
+            <h2>Imagem 3D</h2>
           </div>
         </div>
       </section>

@@ -10,7 +10,7 @@ const Contatos = () => {
     <>
       
       <section className={styles.contatos}>
-      <h3>Fale Conosco</h3>
+      <h1>Fale Conosco</h1>
 
         <div className={styles.container}>
           <Formulario/>    

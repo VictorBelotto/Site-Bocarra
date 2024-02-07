@@ -5,7 +5,7 @@
 
 .card span{
   margin-bottom: 24px;
-  color: #393939;
+  color: #D03438;
   font-weight: 700;
   font-size: 1.4rem;
 }
@@ -19,22 +19,24 @@
 
 .group input, textarea{
   background-color: #EEEEEE;
-  color: #454545;
+  color: #696969;
   width: 350px;  
   border: none;
   font-size: 1rem;
   font-weight: 500;
   padding: 8px;
+  border-radius: 5px;
 }
 .group  textarea{
   height: auto;
+  resize: none;
 }
 .form button{
 border-radius: 5px; 
-font-size: 1.1rem;
+font-size: 1.2rem;
 font-weight: 500;
  width: 350px;
- height: 30px;
+ height: 36px;
  color: #fff;
  background-color: #D03438;
  border-style: hidden;
@@ -46,15 +48,20 @@ font-weight: 500;
 
 @media (max-width: 1000px){
   .group input, textarea{
-    width: 320px;
+    width: 300px;
+  }
+  .title{
+    width: 300px;
   }
   .form button{
-    width: 336px;
+    width: 316px;
   }
   .card{
     border-radius: 10px;
     padding:  16px 8px;
-    max-width: 350px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    width: 95%;
+    max-width: 500px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
   }
 }

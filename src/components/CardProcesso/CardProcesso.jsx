@@ -18,7 +18,7 @@ const CardProcesso = ({image, titulo, descricao }) => {
           {imagemEncontrada && <img src={imagemEncontrada} alt={`imagem ${titulo}`} />}
         </div>
         <div className={styles.containerDescricao}>
-          <h3>{titulo}</h3>
+          <h2>{titulo}</h2>
           <p>{descricao}</p>
         </div>
       </div>

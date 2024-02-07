@@ -3,9 +3,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 6rem;
+  height: 8rem;
   z-index: 5;
-  background-color: #fff;
+  background-color: #fafafa;
   transition: top 500ms ease;
   position: relative;
   top: 0;
@@ -20,15 +20,16 @@
 .cabecalho_fixed{
   position: fixed;
   top: 0;
+ 
 }
 
 .navBar{
   position: relative;
-  top: 16px;
+
 }
 .containerLogo{
 position: relative;
-top: 16px;
+
 left: 32px;
 display: flex;
 align-items: center;
@@ -46,8 +47,10 @@ margin-right: 16px;
 
 .navBar_li:last-of-type a{
 background-color: #d03438;
-padding: 8px;
+padding: 8px 16px;
 color: #ffffff;
+border-radius: 3px;
+
 }
 
 .navBar_li:last-of-type a:hover, .navBar_li:last-of-type a:focus {
@@ -61,7 +64,7 @@ transition-property: color;
 
 .navBar_li a{
   font-size: 1.4rem;
-  color: #000000;
+  color: #2c1a53;
   font-weight: 500;
   letter-spacing: 0px;
   cursor: pointer;
@@ -71,6 +74,7 @@ transition-property: color;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: color;
+  font-family: "Poppins", sans-serif;
 }
 
 
@@ -172,7 +176,11 @@ transition-property: color;
 
 @media (max-width: 770px){
   .cabecalho{
-    height: 4rem;
+    height: 5rem;
+  }
+  .cabecalho_fixed{
+    position: fixed;
+    top: 0;
   }
   .logo{
     left: 0px;
@@ -205,6 +213,11 @@ transition-property: color;
     color: #fff;
     font-size: 2rem;
   }
+  .navBar_li:last-of-type a{
+    background-color: #ffffff;
+    padding: 8px 32px;
+    color: #df3232;
+    }
   .menuBar{
     display: block;
   }

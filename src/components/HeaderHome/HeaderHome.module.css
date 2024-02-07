@@ -6,9 +6,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 6rem;
+  height: 8rem;
   z-index: 5;
   transition: top 500ms ease;
+  
 }
 
 .cabecalho_oculto{
@@ -20,17 +21,17 @@
 .cabecalho_fixed{
   position: fixed;
   top: 0;
-  background-color: #2c1a53;
-  height: 8rem;
+  background: rgba(44, 26, 83, 0.20);
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
 }
 
 .navBar{
   position: relative;
-  top: 16px;
+ 
 }
 .containerLogo{
 position: relative;
-top: 16px;
 left: 32px;
 display: flex;
 align-items: center;
@@ -44,12 +45,18 @@ align-items: center;
 display: flex;
 gap: 24px;
 margin-right: 16px;
+background: rgba(44, 26, 83, 0.20);
+box-shadow: 0 0 10px rgba(0,0,0,0.25);
+backdrop-filter: blur(10px);
+padding: 16px;
+border-radius: 5px;
 }
 
 .navBar_li:last-of-type a{
 background-color: #d03438;
-padding: 8px;
+padding: 8px 16px;
 color: #ffffff;
+border-radius: 3px;
 }
 
 .navBar_li:last-of-type a:hover, .navBar_li:last-of-type a:focus {
@@ -73,6 +80,7 @@ transition-property: color;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: color;
+  font-family: "Poppins", sans-serif;
 }
 
 
@@ -176,6 +184,14 @@ transition-property: color;
   .cabecalho{
     height: 5rem;
   }
+  .cabecalho_fixed{
+    position: fixed;
+    top: 0;
+    background: rgba(44, 26, 83, 0.20);
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    backdrop-filter: blur(10px);
+  }
+  
   .logo{
     left: 0px;
     width: 270px;
@@ -206,6 +222,12 @@ transition-property: color;
   .navBar_li a{
     font-size: 2rem;
   }
+
+  .navBar_li:last-of-type a{
+    background-color: #ffffff;
+    padding: 8px 32px;
+    color: #df3232;
+    }
   .menuBar{
     display: block;
   }
