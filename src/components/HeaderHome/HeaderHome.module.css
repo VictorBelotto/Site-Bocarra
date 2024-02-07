@@ -6,10 +6,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 8rem;
+  height: 5rem;
   z-index: 5;
   transition: top 500ms ease;
-  
+  padding-top: 16px;
 }
 
 .cabecalho_oculto{
@@ -19,8 +19,10 @@
 }
 
 .cabecalho_fixed{
+  padding: 4px 0px;
   position: fixed;
   top: 0;
+  height: 4rem;
   background: rgba(44, 26, 83, 0.20);
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
   backdrop-filter: blur(10px);
@@ -35,10 +37,13 @@ position: relative;
 left: 32px;
 display: flex;
 align-items: center;
+width: auto;
+height: 100%;
 }
 
 .logo{
-  width: 300px;
+  width: auto;
+  height: 100%;
 }
 
 .menu{
@@ -182,20 +187,17 @@ transition-property: color;
 
 @media (max-width: 770px){
   .cabecalho{
-    height: 5rem;
+    height: 4rem;
   }
   .cabecalho_fixed{
     position: fixed;
-    top: 0;
+    top: -1px;
     background: rgba(44, 26, 83, 0.20);
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
     backdrop-filter: blur(10px);
   }
   
-  .logo{
-    left: 0px;
-    width: 270px;
-  }
+
   .containerLogo{
     top: 0;
     left: 0;

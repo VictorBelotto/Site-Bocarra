@@ -10,6 +10,9 @@ import circoGlobo from '../../../assets/images/imagens_galeria/circoGlobo.png'
 const Galeria = () => {
   return (
     <section className={styles.mainContainer} >
+      <span></span>
+      <span></span>
+      <h1>Veja alguns projetos</h1>
       <div className={styles.contaier} >
         <div className={styles.linha1}>
           <img src={portoRico} alt="" />
@@ -24,6 +27,7 @@ const Galeria = () => {
           <img src={circoGlobo} alt="" />
         </div>
       </div>
+      <a href="/galeria">Acesse a galeria</a>
     </section>
   )
 }
