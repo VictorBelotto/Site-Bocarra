@@ -115,7 +115,7 @@ transition-property: color;
   position: relative;
   width: 40px;
   cursor: pointer;
-  margin: 0 8px;
+  margin-right: 16px;
   display: block;
   height: calc(4px * 3 + 11px * 2);
 }
@@ -227,6 +227,7 @@ transition-property: color;
     }
   .menuBar{
     display: block;
+   
   }
   .navBar{
     top: 0px;
