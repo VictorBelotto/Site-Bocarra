@@ -200,7 +200,7 @@ transition-property: color;
 
   .containerLogo{
     top: 0;
-    left: 0;
+    left: 8px;
   }
 
   .menu {

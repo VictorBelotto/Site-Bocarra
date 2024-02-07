@@ -195,8 +195,7 @@ transition-property: color;
     width: 270px;
   }
   .containerLogo{
-    top: 0;
-    left: 0;
+    left: -8px;
   }
 
   .menu {
