@@ -50,9 +50,9 @@ const Formulario = () => {
   return (
     <>
         <div className={styles.card}>
-          <span className={styles.title}>Preencha os campos</span>
+          
           <form className={styles.form} onSubmit={handleSubmit}>
-
+          <span className={styles.title}>Preencha os campos</span>
             <div className={styles.group}>
               <input
                 placeholder="Nome"
@@ -92,7 +92,7 @@ const Formulario = () => {
                 required
               />
             </div>
-            <button type="submit">Enviar</button>
+            <button type="submit">Enviar mensagem</button>
           </form>
         </div>
     </>

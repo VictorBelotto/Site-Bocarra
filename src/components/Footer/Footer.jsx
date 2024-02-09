@@ -10,7 +10,7 @@ const Footer = ()=> {
         
         <section className={styles.social__container}>
 
-            <h2>Conheça nossas redes sociais:</h2>
+            <h3>Conheça nossas redes sociais:</h3>
 
           <div className={styles.social_list}>
             <ul>
@@ -38,9 +38,9 @@ const Footer = ()=> {
        
 
         <div className={styles.direitos}>
-          <p>&copy; Bocarra Circus. </p>
+          <p>&copy; bocarra circus. </p>
           <p>Todos os direitos reservados 2024.</p>
-          <a href="https://github.com/VictorBelotto" target="_blank" rel="noopener noreferrer">Desenvolvido por Victor Belotto</a>
+          <a href="https://github.com/VictorBelotto" target="_blank" rel="noopener noreferrer">designed by victor belotto</a>
         </div>
     </section>
    

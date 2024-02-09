@@ -19,10 +19,30 @@
   margin-bottom: 16px;
 }
 
-.mainContainer h1{
-  margin: 64px;
+.mainContainer a{
+  text-transform: uppercase;
+  margin: 64px 0px;
+  font-size: 1.4rem;
+  background-color: #D03438;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
 }
 
+.mainContainer a:hover{
+  background-color: #c2242a;
+}
+
+.mainContainer h1{
+  margin: 64px 0;
+}
+
+.contaier img{
+  border-radius: 5px;
+}
 .contaier{
   display: flex;
   flex-direction: column;
@@ -50,7 +70,11 @@
   .contaier{
     width: 350px ;
   }
+  .mainContainer a{
+    width: 90%;
+    font-size: 1.2rem;
   
+  }
   .linha1{
     width: 350px;
     display: grid;
@@ -92,6 +116,10 @@
 
   .linha3 img{
     width: 350px;
+  }
+
+  .linha3 img:nth-child(2){
+    display: none;
   }
   
 }

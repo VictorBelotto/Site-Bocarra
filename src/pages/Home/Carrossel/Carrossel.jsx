@@ -23,7 +23,7 @@ const Carrossel = () => {
         <p>Tecnologia em tensoestruturas</p>
         <span></span>
         <h1>Lonas de Circo</h1>
-        <a href='/projetos'>Acesse a galeria</a>
+       
       </div>
 
         <Swiper 

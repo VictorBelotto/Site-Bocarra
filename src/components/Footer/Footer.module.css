@@ -18,8 +18,9 @@
   background-color: #1a1756e5 ; 
 }
 
-.social__container h2 {
-  color: ghostwhite;
+.social__container h3 {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
 }
 
 .social_list{
@@ -70,17 +71,19 @@
   color: white;
   letter-spacing: 0px;
   font-size: 0.9rem;
-  font-weight: 600;
-
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 .direitos a{
   color: white;
   letter-spacing: 0px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   padding: 3px;
+  letter-spacing: 0.5px;
+  font-family: "Poppins", sans-serif;
 }
 /*Social media icons*/
 

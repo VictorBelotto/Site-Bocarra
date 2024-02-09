@@ -13,25 +13,45 @@
   display: flex;
   flex-direction: row;
   gap: 40px;
+  width: 100%;
   max-width: 1000px;
-  height: 420px;
+  height: 460px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 24px 48px;
+  background-color: #ffffff;
+}
+
+.container form{
+  padding-left: 24px;
 }
 .contatos h1{
   position: relative;
-  left: -300px;
+  width: 100%;
+  max-width: 1000px;
   font-size: 3rem !important;
   font-weight: 600;
   margin-bottom: 32px;
+  text-transform: lowercase;
+  font-size: 64px !important;
+  text-align: left;
+  color: #D03438 !important;
+}
+.contatos h3{
+  width: 100%;
+  max-width: 1000px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  color: #696969;
+  font-size: 1rem ;
 }
 .endereco{
   position: relative;
-  top: -50px;
+  top: -30px;
   width: 400px;
   height: 520px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
   border-radius: 10px;
   z-index: 2;
   margin-left: 48px;
@@ -41,26 +61,23 @@
 }
 
 .endereco iframe{
-  border-radius: 10px;
+  border-radius: 5px;
   width: 100%;
   height: 60%;
 }
 
-.endereco h5{
-  margin-left: 16px;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #d03438;
-}
 
 .endereco a{
-  margin-left: 16px;
+  
   font-size: 1.1rem;
-  width: 320px;
+  width: 90%;
   font-weight: 500;
   color: #2c1a53;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+  line-height: 1.5 ;
+  align-self: center;
+  
 }
 
 .endereco a:hover {
@@ -70,10 +87,21 @@
 .endereco p:last-of-type{
   color: #D03438;
   text-align: center;
-  margin-top: 50px;
-  
 }
-
+.icons{
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin: 8px 0px;
+}
+.icons svg{
+  font-size: 2rem;
+  fill: #2c1a53;
+}
+.icons a{
+  display: flex;
+  width: fit-content;
+}
 @media (max-width: 1000px){
   .container{
     flex-direction: column;
@@ -84,7 +112,9 @@
     padding: 8px 16px;
     box-shadow:none;
   }
-
+  .contatos h1, .contatos h3{
+    width: 95%;
+  }
   .endereco{
     margin: 0;
     top: 0;
@@ -99,7 +129,10 @@
   }
   .contatos h1{
     left: 0;
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
     margin-bottom: 16px;
+  }
+  .contatos h3{
+    font-size: 0.8rem;
   }
 }

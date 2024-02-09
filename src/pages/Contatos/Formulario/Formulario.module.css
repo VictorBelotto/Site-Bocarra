@@ -1,20 +1,22 @@
 .card {
   display: flex;
   flex-direction: column;
+  padding: 24px;
 }
 
-.card span{
-  margin-bottom: 24px;
-  color: #D03438;
-  font-weight: 700;
+.form span{
+  color: #393939;
+  font-weight: 600;
   font-size: 1.4rem;
+  letter-spacing: 1px;
+  width: 350px;
+  
 }
 
 .form{
   display: flex;
   flex-direction: column;
   gap: 24px;
-
 }
 
 .group input, textarea{
@@ -33,13 +35,14 @@
 }
 .form button{
 border-radius: 5px; 
-font-size: 1.2rem;
+font-size: 1.1rem;
+padding: 8px 0px;
 font-weight: 500;
- width: 350px;
- height: 36px;
- color: #fff;
- background-color: #D03438;
- border-style: hidden;
+color: #fff;
+background-color: #D03438;
+border-style: hidden;
+font-family: "Poppins", sans-serif;
+text-transform: uppercase;
 }
 .form button:hover{
   background-color: #ad2a2f;

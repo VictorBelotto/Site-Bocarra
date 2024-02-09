@@ -27,7 +27,7 @@ const Galeria = () => {
           <img src={circoGlobo} alt="" />
         </div>
       </div>
-      <a href="/galeria">Acesse a galeria</a>
+      <a href="/galeria">Explore mais nossos projetos</a>
     </section>
   )
 }
