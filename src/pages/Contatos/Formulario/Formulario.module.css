@@ -50,7 +50,10 @@ text-transform: uppercase;
 }
 
 @media (max-width: 1000px){
-  .group input, textarea{
+  .group{
+    width: auto;
+  }
+  .group input, .group textarea{
     width: 300px;
   }
   .title{
@@ -61,10 +64,17 @@ text-transform: uppercase;
   }
   .card{
     border-radius: 10px;
-    padding:  16px 8px;
+    padding:  16px 0px;
     width: 95%;
     max-width: 500px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     align-items: center;
+  }
+  .form{
+    align-items: center;
+  }
+
+  .form span{
+    width: 316px;
   }
 }

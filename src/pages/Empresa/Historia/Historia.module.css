@@ -29,12 +29,13 @@
 
 .containerHistoria{
   display: flex;
+  
   width: 1100px;
   background-color: #fff;
   flex-direction: row;
   box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1);
   padding: 16px;
-  border-radius: 10px;
+  border-radius: 5px;
   justify-content: space-between;
 }
 
@@ -108,11 +109,13 @@
   
   .containerHistoria{
     width: 98%;
+    margin:  0;
+    padding: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: none;
-    background-color: #fafafa;
+    background-color: #ffffff;
   }
   .imagem{
    margin-top: 16px;

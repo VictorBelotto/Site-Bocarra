@@ -1,6 +1,5 @@
 .cabecalho{
   position: absolute;
-  left: 0;
   top: 0px;
   width: 100%;
   display: flex;
@@ -20,6 +19,7 @@
 
 .cabecalho_fixed{
   padding: 4px 0px;
+ width: 100%;
   position: fixed;
   top: 0;
   height: 4rem;
@@ -53,8 +53,8 @@ margin-right: 16px;
 background: rgba(44, 26, 83, 0.20);
 box-shadow: 0 0 10px rgba(0,0,0,0.25);
 backdrop-filter: blur(10px);
-padding: 16px;
 border-radius: 5px;
+padding: 16px 0px 16px 16px;
 }
 
 .navBar_li:last-of-type a{
@@ -218,6 +218,7 @@ transition-property: color;
     transition: left 0.5s ease;
     align-items: center;
     gap: 40px;
+    
   }
   .navBar_li:first-child{
     margin-top: 150px;
