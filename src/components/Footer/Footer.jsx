@@ -14,9 +14,6 @@ const Footer = ()=> {
 
           <div className={styles.social_list}>
             <ul>
-              <li >
-                <a className={`${styles.icon} ${styles.containerFacebook}`}  href="/"><FaFacebook className={styles.facebook} /></a>
-              </li>
               <li>
                 <a className={`${styles.icon} ${styles.containerInstagram}`} 
                 target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/bocarracircus/">

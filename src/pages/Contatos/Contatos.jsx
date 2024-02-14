@@ -24,9 +24,9 @@ const Contatos = () => {
 
         
             <div className={styles.icons}>
-              <a href=""><FaWhatsapp/></a>
-              <a href=""><FaInstagram/></a>
-              <a href=""> <FaFacebook/></a>
+              <a href="https://api.whatsapp.com/send?phone=5519996924744&text=Ol%C3%A1%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer"><FaWhatsapp/></a>
+              <a  target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/bocarracircus/"><FaInstagram/></a>
+              
             </div>
             <p>Seg. à Sex. das 8h às 17h </p>
           </aside>

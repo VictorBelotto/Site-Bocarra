@@ -5,8 +5,13 @@ import { GoArrowRight } from "react-icons/go";
 const Proposito = () => {
   return (
     <main className={styles.container}>
-      <h1>Princípios Fundamentais</h1>
+      <div className={styles.containerTitulo}>
+        <span className={styles.linhaDetalheTopo}></span>
+        <h3>desde 1995</h3>
+        <h1>Princípios Fundamentais.</h1>
+      </div>
       <section className={styles.containerProposito}> 
+     
         <div className={styles.proposito}>
           <h2>Missão</h2>
           <p>

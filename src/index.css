@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: #fafafa;
+  background-color: #ffffff;
 }
 
 h1,h2,h3,h4,h5{
@@ -20,9 +20,10 @@ h1,h2,h3,h4,h5{
 }
 
 h1{
-  font-size: 1.8rem !important;
+  font-size: 64px !important;
   font-weight: 600 !important;
-  color: #2c1a53 !important;
+  color: #D03438!important;
+  text-transform: lowercase;
 }
 
 
@@ -31,15 +32,21 @@ h2{
   font-size: 1.6rem !important;
 }
 
+h3{
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  color: #696969;
+  font-size: 16px ;
+}
+
 button{
   font-family: "Poppins", sans-serif;
 }
 
 @media (max-width: 770px){
 
-  h1{
-    font-size: 1.6rem !important;
-  }
+  
 
   h2{
     font-size: 1.4rem !important;
