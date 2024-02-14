@@ -110,6 +110,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 0px;
+  width: auto;
  }
  .cardImage img{
   width: 340px;
