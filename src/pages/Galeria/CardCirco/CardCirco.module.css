@@ -1,0 +1,42 @@
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 64px;
+}
+
+.containerTitulo{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  padding: 16px 0px 0px 40px;
+}
+.containerTitulo h2{
+  color: #D03438;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px;
+}
+.containerTitulo span{
+  margin-top: 12px;
+  background-color: #D03438;
+  height: 3px;
+  width: 200px ;
+}
+
+.container{
+  display: flex;
+  padding: 0px 40px 32px 40px;
+  gap: 40px ;
+  justify-content: space-between;
+}
+
+.linhaCentro{ 
+  width: 3px;
+  height: 300px;
+  background-color: #D03438;
+  position: relative;
+  top: 64px;
+}

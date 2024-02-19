@@ -1,0 +1,80 @@
+/* SlidesProjetos.module.css */
+
+.carousel {
+  width: 500px;
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+}
+
+.imageContainer {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.image {
+  width: 500px;
+  height: 280px;
+  object-fit: cover;
+  display: none; 
+}
+
+.image.active {
+  display: block; 
+}
+
+.prevButton,
+.nextButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  color: red;
+  font-size: 80px;
+}
+
+.prevButton {
+  left: 0;
+}
+
+.nextButton {
+  right: 0;
+}
+
+/* Estilizando a seta */
+.prevButton::before,
+.nextButton::after {
+  content: '\2039';
+}
+
+.nextButton::after {
+  content: '\203A';
+}
+
+.thumbnailsContainer {
+  width: 500px; 
+ 
+}
+
+.thumbnails {
+  display: flex;
+  padding-top: 20px;
+}
+
+.thumbnail {
+  width: 150px;
+  height: 100px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.thumbnail:last-child {
+  margin-right: 0;
+}
+
+.active {
+  border: 2px solid blue;
+}

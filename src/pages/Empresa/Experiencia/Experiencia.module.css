@@ -7,7 +7,7 @@
 }
 .containerTitulo{
   width: 1200px;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
   display: flex;
   flex-direction: column;
 }

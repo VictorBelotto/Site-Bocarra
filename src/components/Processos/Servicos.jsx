@@ -7,14 +7,14 @@ const Servicos = () => {
       <span className={styles.linhaDetalhe}></span>
         <div className={styles.bemVindo}>
           <span className={styles.linhaDetalhe}></span>
-          <h2>
-            "Cobrindo Sonhos, Criando Espetáculos - Nossas Lonas, Seu Circo!"
-          </h2>
         </div >
       <span className={styles.linhaDetalhe}></span>
   
       <section className={styles.mainContainer}>
-      <h1>Nosso Processo</h1>
+      <div className={styles.containerTitulo}>
+        <h3>alguma coisa</h3> 
+        <h1>Nosso Processo</h1>
+      </div>
         <section>
           <main className={styles.containerCardProcesso}>
             <CardProcesso

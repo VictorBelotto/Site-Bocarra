@@ -11,8 +11,13 @@ const Galeria = () => {
   return (
     <section className={styles.mainContainer} >
       <span></span>
+      <h2>"Cobrindo Sonhos, Criando Espetáculos - Nossas Lonas, Seu Circo!"</h2>
       <span></span>
-      <h1>Veja alguns projetos</h1>
+
+      <div className={styles.containerTitulo} >
+        <h3>galeria</h3>
+        <h1>alguns projetos</h1>
+      </div>
       <div className={styles.contaier} >
         <div className={styles.linha1}>
           <img src={portoRico} alt="" />
@@ -27,7 +32,10 @@ const Galeria = () => {
           <img src={circoGlobo} alt="" />
         </div>
       </div>
-      <a href="/galeria">Explore mais nossos projetos</a>
+      
+      <a href="/galeria" className={styles.vejaMais} >Veja mais na nossa galeria</a>
+
+      
     </section>
   )
 }
