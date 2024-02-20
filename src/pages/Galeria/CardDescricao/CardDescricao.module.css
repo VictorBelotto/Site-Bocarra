@@ -1,45 +1,52 @@
 .mainContainer{
- 
   width: 370px;
   height: 400px;
-  background-color: rgb(255, 255, 255);
+  background-color: #F0F0F0;
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
 }
 
+.containerDescricao{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
 .info{
   display: flex;
   flex-direction: column;
+  position: relative;
+  top: -51px;
   gap: 8px;
+
 }
 
-.info h3 {
-  color: #D03438 !important;
+.info h2 {
+  color: #696969 !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.8px;
 }
-.info span {
-  background-color: #D03438 ;
-  height: 3px;
-  width: 200px;
-}
+
 
 .infos{
   margin-top: 16px;
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  
 }
 
 .infos h5{
-  color: #696969;
+  color: #6a6a6a;
   font-weight: 600;
   font-size: 18px ;
-  text-align: center;
 }
 .infos p{
   margin-top: 4px;
-  font-weight: 400;
-  text-align: center;
-  color: #575757;
+  font-weight: 500;
+  color: #8d8d8d;
+  font-size: 14px;
 }
 
 .infos span{
@@ -48,18 +55,16 @@
   background-color: #D03438;
 }
 
-.containerDescricao{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
+
 .containerInfos{
   display: flex;
   flex-direction: column;
+  margin: 0px 8px;
 }
 .containerInfos h2{
   color: #373435;
+  font-weight: 700 !important;
+
 }
 .containerInfos span{
   height: 2px;
@@ -68,4 +73,21 @@
   margin-top: 8px;
 }
 
+.containerPropriedades{
+  display: flex;
+  flex-direction: column;
+  width: 110px;
+}
 
+@media (max-width: 770px){
+  .mainContainer{
+    width: 95%;
+  }
+  
+  .info{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -40px;
+  }
+}

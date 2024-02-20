@@ -10,6 +10,7 @@
 .imageContainer {
   display: flex;
   transition: transform 0.5s ease;
+  border-radius: 5px;
 }
 
 .image {
@@ -17,6 +18,7 @@
   height: 280px;
   object-fit: cover;
   display: none; 
+  border-radius: 5px;
 }
 
 .image.active {
@@ -69,6 +71,7 @@
   height: 100px;
   margin-right: 20px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .thumbnail:last-child {
@@ -76,5 +79,5 @@
 }
 
 .active {
-  border: 2px solid blue;
+  border: 1px solid #D03438;
 }

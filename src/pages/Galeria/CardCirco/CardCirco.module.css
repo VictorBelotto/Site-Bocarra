@@ -12,18 +12,20 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 12px;
-  padding: 16px 0px 0px 40px;
+  padding: 16px 40px 0px 40px;
 }
 .containerTitulo h2{
   color: #D03438;
   font-weight: 700 !important;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
 }
 .containerTitulo span{
   margin-top: 12px;
+  
   background-color: #D03438;
   height: 3px;
-  width: 200px ;
+  width: 100% ;
 }
 
 .container{
@@ -39,4 +41,10 @@
   background-color: #D03438;
   position: relative;
   top: 64px;
+}
+
+@media (max-width: 770px){
+  .mainContainer{
+    width: 95%;
+  }
 }

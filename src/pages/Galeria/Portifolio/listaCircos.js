@@ -4,7 +4,6 @@ import imagensCircoRamito from '../../../functions/exportImagesCircos/imagensCir
 
 
 const listaCircos = [
- 
 
   {
     titulo: 'Circo Fantástico',

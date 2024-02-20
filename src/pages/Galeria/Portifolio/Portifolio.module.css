@@ -7,7 +7,7 @@
   margin: 20px 0px;
 }
 
-/*logo e titulo*/
+
   .containerTitulo{
     display: flex;
     flex-direction: column;
@@ -15,121 +15,31 @@
     margin: 120px 0px 32px 0px;
   }
 
-  .containerTitulo h1{
-    color: #1e2132;
+  .displayMobile{
+    display: none;
+   
   }
-
-/*Conteudo*/
-.container_conteudo{
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin-bottom: 20px;
-}
-
-/*Imagens */
-
-.container_slidesMobile{
-  display: none;
-  width: 100%;
-  overflow: hidden; 
-}
-.container_slides{
-  display: flex;
-  width: 100%;
-  overflow: hidden; 
-  justify-content: center;
-  align-items: center;
-}
-
-/*Descrição das lonas*/
-.containerDescricao{
-  grid-column: 2 / span 4;
-  grid-row: 1;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-}
-
-.containerDescricao h2{
-  color: #1e2132;
-  font-weight: 700;
-  font-size: 1.6rem;
-  letter-spacing: 0px;
-  margin-bottom: 5px;
-}
-
-.descricao {
-  text-align: center;
-  font-size: 1.2rem;
-  line-height: 1.4;
-  letter-spacing: 0px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #2c1a53;
-}
-
-/*linhas detalhe*/
-
-.linhaDetalhe{
-  margin: 15px 0px;
-  width: 100%;
-  height: 3px;
-  background-color: rgb(206, 42, 52) ;
-}
-.containerDescricao .linhaDetalhe{
-  margin-top: 5px;
-  margin-bottom: 25px;
-  width: 33%;
-}
-
-.linhaDetalhe2{
-  height: 3px;
-  margin-top: 25px;
-  width: 33%;
-  align-self: flex-end;
-  margin-right: 10%;
-}
-
-.teste{
-  display: flex;
-}
 
 @media (max-width: 770px){
-  .containerTitulo h1{
-    font-size: 1.4rem;
-  }
-  
-  .containerDescricao h2{
-    font-size: 1.2rem;
-    margin-left: 5%;
-  }
-  .containerDescricao p{
-    font-size: 1rem;
-    text-align: center;
-  }
-  
-  .container_conteudo{
-    width: 100%;
-    
-  }
-  .descricao{
-    text-align: justify;
-  }
-  .containerDescricao .linhaDetalhe{
-    margin-left: 5%;
-  }
-
-  .container_imagens{
-    display: flex;
-    justify-content: center;
-  }
-  .container_slidesMobile{
-    display: flex;
-  }
-  .container_slides{
+  .displayDesktop{
     display: none;
   }
+  .displayMobile{
+    display: flex;
+    width: 98%;
+    flex-direction: column;
+    gap: 64px;
+  }
+  .containerCardMobile{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+  }
+  
+  .containerTitulo{
+    width: 95%;
+  }
+
 }
 
 

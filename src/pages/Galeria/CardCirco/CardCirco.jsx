@@ -16,8 +16,6 @@ const CardCirco = ({circo}) => {
        imagens={circo.imagens}
       />
 
-        <span className={styles.linhaCentro}></span>
-
       <CardDescricao 
         descricao={circo.descricao}
       />

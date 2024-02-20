@@ -41,9 +41,10 @@
 
   
   .swiper__mobile {
-    width: 80%;
+    width: 95%;
     height: 120%;
     overflow: hidden; 
+    margin-bottom: 80px;
   }
   
   .swiper__slide__mobile {
