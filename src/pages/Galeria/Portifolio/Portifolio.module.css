@@ -20,20 +20,41 @@
    
   }
 
+  .containerCardMobile h2{
+    color: #D03438;
+    margin-bottom: 16px;
+    font-weight: 700 !important;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    padding-top: 8px;
+  }
+
+  .containerCardMobile span{
+    height: 3px;
+    width: 200px;
+    background-color: #D03438;
+    margin-bottom: 16px;
+  }
+
 @media (max-width: 770px){
+  .containerTitulo h1{
+    font-size: 48px !important;
+  }
+
   .displayDesktop{
     display: none;
   }
   .displayMobile{
     display: flex;
-    width: 98%;
+    width: 95%;
     flex-direction: column;
     gap: 64px;
   }
   .containerCardMobile{
     display: flex;
     flex-direction: column;
-    width: 98%;
+    width: 100%;
+    overflow: hidden;
   }
   
   .containerTitulo{

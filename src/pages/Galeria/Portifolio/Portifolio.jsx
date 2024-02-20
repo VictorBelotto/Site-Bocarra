@@ -25,6 +25,7 @@ const Portifolio = () => {
         {listaCircos.map((circo) => (
           <div key={circo.titulo} className={styles.containerCardMobile} >
             <h2>{circo.titulo}</h2>
+            <span></span>
             <div className={styles.containerSlideMobile} >
              <SlideMobile imagens={circo.imagens} />
             </div>

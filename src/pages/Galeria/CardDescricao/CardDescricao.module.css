@@ -76,12 +76,14 @@
 .containerPropriedades{
   display: flex;
   flex-direction: column;
-  width: 110px;
+  width: auto;
 }
 
 @media (max-width: 770px){
   .mainContainer{
-    width: 95%;
+    width: 100%;
+    height: auto;
+    padding-bottom: 32px;
   }
   
   .info{
@@ -90,4 +92,20 @@
     position: relative;
     top: -40px;
   }
+  .containerDescricao{
+    width: 100%;
+  }
+  .infos h5{
+    font-size: 16px !important;
+  }
+
+  .infos p{
+    font-size: 12px;
+  }
+
+  .infos{
+    width: 100%;
+    
+  }
+  
 }
