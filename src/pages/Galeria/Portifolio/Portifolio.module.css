@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     width: 1000px;
-    margin: 120px 0px 32px 0px;
+    margin: 64px 0px 32px 0px;
   }
 
   .displayMobile{
