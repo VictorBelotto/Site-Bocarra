@@ -19,7 +19,6 @@
   position: relative;
   top: -51px;
   gap: 8px;
-
 }
 
 .info h2 {
@@ -27,7 +26,6 @@
   font-weight: 700 !important;
   letter-spacing: 0.8px;
 }
-
 
 .infos{
   margin-top: 16px;
@@ -83,29 +81,22 @@
   .mainContainer{
     width: 100%;
     height: auto;
-    padding-bottom: 32px;
+ 
   }
   
-  .info{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: -40px;
-  }
   .containerDescricao{
     width: 100%;
-  }
-  .infos h5{
-    font-size: 16px !important;
-  }
-
-  .infos p{
-    font-size: 12px;
-  }
-
-  .infos{
-    width: 100%;
-    
+    position: relative;
+    top: -22px;
   }
   
+  .containerInfos{
+    padding: 0px 16px;
+
+  }
+  .infos{
+    width: 100%;
+    position: relative;
+  }
+
 }

@@ -33,7 +33,7 @@ const Galeria = () => {
         </div>
       </div>
       
-      <a href="/galeria" className={styles.vejaMais} >Veja mais na nossa galeria</a>
+      <a href="/galeria" className={styles.vejaMais} >Veja mais na galeria</a>
 
       
     </section>

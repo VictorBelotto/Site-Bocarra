@@ -51,17 +51,22 @@
 
 @media (max-width: 770px){
   .container{
-    width: 350px;
+    width: 98%;
     margin-top: 16px;
-
+    height: auto;
+  }
+  .containerImg{
+    width: 95%;
   }
 
   .containerImg img {
-    width: 330px;
+    width: 100%;
   }
 
   .containerDescricao{
-    width: 330px
+    width: 95%;
+    padding-bottom: 16px;
+    
   }
 
 }

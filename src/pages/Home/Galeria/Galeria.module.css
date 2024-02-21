@@ -31,7 +31,6 @@
   text-align: center;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
-  letter-spacing: px;
 }
 .vejaMais:hover{
   background-color: #c0191f;
@@ -41,11 +40,10 @@
   width: 1200px;
   margin: 64px 0px 32px 0px;
 }
-.mainContainer h1{
-  margin: 0;
-}
+
 .mainContainer h2{
   margin-bottom: 64px;
+  width: 95%;
 }
 
 .contaier img{
@@ -82,11 +80,7 @@
   .contaier{
     width: 350px ;
   }
-  .mainContainer a{
-    width: 90%;
-    font-size: 1.2rem;
-  
-  }
+
   .linha1{
     width: 350px;
     display: grid;
@@ -134,4 +128,13 @@
     display: none;
   }
   
+  .containerTitulo{
+    width: 95%;
+  }
+  .mainContainer{
+    padding: 0;
+  }
+  .vejaMais{
+    font-size: 1.2rem;
+  }
 }

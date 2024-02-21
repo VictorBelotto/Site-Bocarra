@@ -13,12 +13,15 @@
   margin-bottom: 64px;
 }
 
-
 .logo:hover{
   transform: scale(1.05);
   cursor: pointer;
 }
-
+.containerTitulo{
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
 
 .swiper {
   display: flex !important;
@@ -49,9 +52,14 @@
     margin-right: 8px !important;
   }
   .swiper{
-    width: 100vw !important;
+    width: 95% !important;
+    align-self: center;
   }
-  .mainContainer h1{
-    font-size: 1.4rem;
+  .mainContainer{
+    align-items: center;
   }
+  .containerTitulo{
+    width: 95%;
+  }
+  
 }

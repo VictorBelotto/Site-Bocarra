@@ -88,10 +88,23 @@
     font-weight: 700;
   }
   .mainContainer a{
-    width:300px
+    font-size: 1.2rem;
+    padding: 16px 32px;
   }
   .mainContainer h1{
     font-size: 1.4rem;
+  }
+  .mainContainer{
+    width: 100%;
+    align-items: center;
+  }
+  .containerCardProcesso{
+    flex-direction: column;
+    width: 95%;
+    align-items: center;
+  }
+  .containerTitulo{
+    width: 95%;
   }
 }
 

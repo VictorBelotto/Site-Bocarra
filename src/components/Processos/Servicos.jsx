@@ -15,7 +15,7 @@ const Servicos = () => {
         <h3>alguma coisa</h3> 
         <h1>Nosso Processo</h1>
       </div>
-        <section>
+        
           <main className={styles.containerCardProcesso}>
             <CardProcesso
               image='projeto'
@@ -36,7 +36,7 @@ const Servicos = () => {
 
           </main>
          
-        </section>
+       
         <a href="/contatos">Entre em contato</a>
         <span></span>
       </section>

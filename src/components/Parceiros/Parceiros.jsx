@@ -33,7 +33,10 @@ const Parceiros = () => {
 
   return (
     <section className={styles.mainContainer}>
-      <h1>Alguns de nossos clientes</h1>
+      <div className={styles.containerTitulo} >
+        <h3>seu espetáculo</h3>
+        <h1>nossos clientes</h1>
+      </div>
       <Swiper
       className={`"mySwiper"  ${styles.swiper}` }
         slidesPerView={larguraTela}

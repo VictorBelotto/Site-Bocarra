@@ -11,9 +11,7 @@ const CardDescricao = ({descricao}) => {
       <div className={styles.info}>
         <h2>INFORMAÇÕES</h2>
       </div>
-
       <div className={styles.containerDescricao}>
-
         <div className={styles.containerInfos}>
           <h2>Lona Principal</h2>
           <span></span>

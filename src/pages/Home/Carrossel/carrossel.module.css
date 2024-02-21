@@ -34,7 +34,7 @@
 .info h1{
   width: fit-content;
   color: #fff !important;
-  font-size: 1.8rem;
+  font-size: 48px !important;
   font-weight: 600;
   position: relative;
   padding: 16px; 
