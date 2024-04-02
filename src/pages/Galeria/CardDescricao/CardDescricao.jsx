@@ -1,8 +1,6 @@
 import React from 'react'
 import styles from './CardDescricao.module.css'
-import svgLona from '../../../assets/images/bocarra_visual/svgLona.svg'
-import svgMarquise from '../../../assets/images/bocarra_visual/svgMarquise.svg'
-import svgLayout from '../../../assets/images/bocarra_visual/svgLayout.svg'
+
  
 const CardDescricao = ({descricao}) => {
   const {lonaPrincipal, marquise, infoGeral} = descricao
@@ -17,7 +15,7 @@ const CardDescricao = ({descricao}) => {
           <span></span>
           <div className={styles.infos}>
               <div className={styles.containerPropriedades}>
-                <h5>Dimenções</h5>
+                <h5>Dimensões</h5>
                 <p>{lonaPrincipal.dimencao}</p>
               </div>
               <div className={styles.containerPropriedades}>
@@ -35,7 +33,7 @@ const CardDescricao = ({descricao}) => {
           <span></span>
           <div className={styles.infos}>
               <div className={styles.containerPropriedades}>
-                <h5>Dimenções</h5>
+                <h5>Dimensões</h5>
                 <p>{marquise.dimencao}</p>
               </div>
               <div className={styles.containerPropriedades}>

@@ -236,7 +236,7 @@ transition-property: color;
     display: block;
   }
   .navBar{
-    top: 8px;
+    top: 0px;
   }
  .toggle{
     display: block;
